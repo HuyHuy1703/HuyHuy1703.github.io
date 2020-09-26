@@ -30,6 +30,10 @@ p{
     margin: auto;
 }
 
+img{
+    width: 100%;
+}
+
 a{
     display: block;
     margin-top: 15px;
