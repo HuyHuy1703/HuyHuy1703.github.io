@@ -222,7 +222,7 @@ h4{
     margin-bottom: 20px;
     font-size: 20px;
 }
-li{
+.footer li{
     display: flex;
     width: 100%;
     color: #919294;
