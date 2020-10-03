@@ -208,6 +208,12 @@ a{
     padding: 15px 30px;
     margin-top: -7px;
 }
+
+.product h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
 .product .content p{
     padding: 5px 0px;
     font-weight: 300;
@@ -236,10 +242,11 @@ a{
     width: 100%;
 }
 
-h4{
+.footer h4{
     margin-bottom: 20px;
     font-size: 20px;
 }
+
 .footer li{
     display: flex;
     width: 100%;
