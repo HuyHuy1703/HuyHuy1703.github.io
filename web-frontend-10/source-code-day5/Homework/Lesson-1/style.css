@@ -1,0 +1,97 @@
+/* css */
+
+body{
+    background-color: #F5F5F5;
+}
+
+.menu{
+    width: 250px;
+    border: 1px solid red;
+    background-color: #fff;
+    padding: 0px 10px;
+}
+
+#menu{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+li{
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #757575;
+    text-decoration: none;
+}
+
+span{
+    display: none;
+}
+
+/* hover */
+/* .main-menu a:hover{
+    color: orange ;
+} */
+
+/* .main-menu li:hover{
+    background-color: #ECEFF1;
+} */
+
+/* .main-menu li:hover span{
+    display: flex;
+} */
+
+.row_1_level_1,
+.row_1_level_2,
+.row_2_level_1,
+.row_2_level_2,
+.row_3_level_1,
+.row_3_level_2,
+.row_4_level_1,
+.row_4_level_2,
+.row_5_level_1,
+.row_5_level_2,
+.test{
+    position: relative;
+}
+
+.level_1{
+    position: absolute;
+    top: 0;
+    width: 260px;
+    left: 200px;
+    display: none;
+    padding-left: 60px;
+}
+
+.level_2{
+    position: absolute;
+    top: 0;
+    width: 260px;
+    left: 260px;
+    display: none;
+}
+
+/* .row_1_level_1 .line_1:hover{
+    color: orange;
+} */
+
+.row_1_level_1 .line_1:hover + .level_1{
+    display: block;
+}
+
+.row_1_level_1 .line_1:hover + .level_1 li a{
+    color: red;
+}
+
