@@ -176,7 +176,7 @@ li{
     color: #fff;
 }
 
-.menu-list .loTrinh .sub-menu li a:hover a{
+.menu-list .loTrinh .sub-menu li a:hover + a{
     color: rebeccapurple ;
 }
 
