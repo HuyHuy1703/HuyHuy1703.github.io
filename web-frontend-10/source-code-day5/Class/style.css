@@ -169,11 +169,15 @@ li{
 }
 
 .menu-list .sub-menu li:hover{
-    background-color: aqua;
+    background-color: white;
 }
 
 .menu-list .sub-menu li a{
-    color: #fff;
+    /* color: white!important; */
+}
+
+.menu-list .sub-menu li:hover{
+    color: blue;
 }
 
 .menu-list .loTrinh .sub-menu li a:hover + a{
