@@ -172,9 +172,9 @@ li{
     background-color: white;
 }
 
-.menu-list .sub-menu li a{
-    /* color: white!important; */
-}
+/* .menu-list .sub-menu li a{
+    color: white!important;
+} */
 
 .menu-list .sub-menu li:hover{
     color: blue;

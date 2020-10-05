@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 100%;
+    height: 300px;
+}
+
 .menu{
     width: 250px;
     height: 300px;
@@ -33,12 +38,12 @@ a{
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .ul_menu_lv_2{
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 250px;
     width: 250px;
     height: 300px;
@@ -46,6 +51,8 @@ a{
     padding-left: 10px;
     display: none;
     z-index: 99;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .ul_menu_lv_3{
@@ -58,6 +65,28 @@ a{
     padding-left: 10px;
     display: none;
     z-index: 99;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.li_lv_2_no_2 .ul_menu_lv_3{
+    top: -60px;
+}
+
+.li_lv_2_no_3 .ul_menu_lv_3{
+    top: -120px;
+}
+
+.li_lv_2_no_4 .ul_menu_lv_3{
+    top: -180px;
+}
+
+.li_lv_2_no_4 .ul_menu_lv_3{
+    top: -180px;
+}
+
+.li_lv_2_no_5 .ul_menu_lv_3{
+    top: -240px;
 }
 
 .li_lv_1_no_1,
@@ -95,7 +124,7 @@ a{
 .li_lv_1_no_3:hover .ul_menu_lv_2,
 .li_lv_1_no_4:hover .ul_menu_lv_2,
 .li_lv_1_no_5:hover .ul_menu_lv_2{
-    display: block;
+    display: flex;
 }
 
 .li_lv_2_no_1:hover .ul_menu_lv_3,
@@ -103,6 +132,6 @@ a{
 .li_lv_2_no_3:hover .ul_menu_lv_3,
 .li_lv_2_no_4:hover .ul_menu_lv_3,
 .li_lv_2_no_5:hover .ul_menu_lv_3{
-    display: block;
+    display: flex;
 }
 
