@@ -2,6 +2,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
 }
 
 .container{
@@ -29,6 +30,10 @@ a{
     padding: 20px;
     text-decoration: none;
     color: black;
+}
+
+span{
+    text-transform: capitalize;
 }
 
 .ul_menu_lv_1{
@@ -69,23 +74,19 @@ a{
     justify-content: space-between;
 }
 
-.li_lv_2_no_2 .ul_menu_lv_3{
+.li_lv_2_no_2 .ul_menu_lv_3, .row_2{
     top: -60px;
 }
 
-.li_lv_2_no_3 .ul_menu_lv_3{
+.li_lv_2_no_3 .ul_menu_lv_3, .row_3{
     top: -120px;
 }
 
-.li_lv_2_no_4 .ul_menu_lv_3{
+.li_lv_2_no_4 .ul_menu_lv_3, .row_4{
     top: -180px;
 }
 
-.li_lv_2_no_4 .ul_menu_lv_3{
-    top: -180px;
-}
-
-.li_lv_2_no_5 .ul_menu_lv_3{
+.li_lv_2_no_5 .ul_menu_lv_3, .row_5{
     top: -240px;
 }
 
