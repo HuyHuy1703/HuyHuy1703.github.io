@@ -5,11 +5,32 @@
     box-sizing: border-box;
     font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
 }
+.container{
+    width: 100%;  
+}
+
+.row_1, .row_2{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+svg{
+    color: #EE4F30;
+}
 
 .card{
     width: 200px;
     height: 200px;
-    border: 1px solid dodgerblue;
     position: relative;
 }
 
@@ -84,7 +105,6 @@
 }
 
 .info .sold{
-    /* border: 1px solid salmon; */
     border-radius: 50px;
     padding: 3px 0px 2px 0px;
     background-color: #FEBDA8;
