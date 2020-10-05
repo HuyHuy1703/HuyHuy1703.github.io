@@ -31,6 +31,9 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover span{
+   color: orange; 
+}
 
 span{
     text-transform: capitalize;
@@ -110,14 +113,6 @@ span{
 .li_lv_1_no_5,
 .li_lv_2_no_5{
     position: relative;
-}
-
-.ul_menu_lv_1 .li_lv_1_no_1 a:hover,
-.ul_menu_lv_1 .li_lv_1_no_2 a:hover,
-.ul_menu_lv_1 .li_lv_1_no_3 a:hover,
-.ul_menu_lv_1 .li_lv_1_no_4 a:hover,
-.ul_menu_lv_1 .li_lv_1_no_5 a:hover{
-    color: orange;
 }
 
 .li_lv_1_no_1:hover .ul_menu_lv_2,
