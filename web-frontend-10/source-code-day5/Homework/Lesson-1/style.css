@@ -31,10 +31,17 @@ a{
     text-decoration: none;
     color: black;
 }
-.li_lv_1_no_1:hover .lv_1_a_1{
+
+/* Hover Level 1 */
+.li_lv_1_no_1:hover .lv_1_a_1,
+.li_lv_1_no_2:hover .lv_1_a_1,
+.li_lv_1_no_3:hover .lv_1_a_1,
+.li_lv_1_no_4:hover .lv_1_a_1,
+.li_lv_1_no_5:hover .lv_1_a_1{
     color: orange;
 }
 
+/* Hover Level 2 */
 .li_lv_2_no_1:hover .lv_2_a_1,
 .li_lv_2_no_2:hover .lv_2_a_2,
 .li_lv_2_no_3:hover .lv_2_a_3,
@@ -43,6 +50,7 @@ a{
     color: orange;
 }
 
+/* Hover Level 3 */
 .lv_3_a_1:hover,
 .lv_3_a_2:hover,
 .lv_3_a_3:hover,
@@ -50,9 +58,6 @@ a{
 .lv_3_a_5:hover{
     color: orange;
 }
-/* a:hover span{
-   color: orange; 
-} */
 
 span{
     text-transform: capitalize;
@@ -68,7 +73,7 @@ span{
     justify-content: space-between;
 }
 
-.ul_menu_lv_2{
+.ul_menu_lv_2, .ul_menu_lv_3{
     position: absolute;
     top: 0px;
     left: 250px;
@@ -77,19 +82,7 @@ span{
     padding: 0;
     padding-left: 10px;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.ul_menu_lv_3{
-    position: absolute;
-    top: 0;
-    left: 250px;
-    width: 250px;
-    height: 300px;
-    padding: 0;
-    padding-left: 10px;
-    display: none;
+    z-index: 99;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -136,10 +129,8 @@ span{
 .li_lv_1_no_2:hover .ul_menu_lv_2,
 .li_lv_1_no_3:hover .ul_menu_lv_2,
 .li_lv_1_no_4:hover .ul_menu_lv_2,
-.li_lv_1_no_5:hover .ul_menu_lv_2{
-    display: flex;
-}
-
+.li_lv_1_no_5:hover .ul_menu_lv_2,
+/* --------------------------- */
 .li_lv_2_no_1:hover .ul_menu_lv_3,
 .li_lv_2_no_2:hover .ul_menu_lv_3,
 .li_lv_2_no_3:hover .ul_menu_lv_3,
