@@ -31,9 +31,28 @@ a{
     text-decoration: none;
     color: black;
 }
-a:hover span{
-   color: orange; 
+.li_lv_1_no_1:hover .lv_1_a_1{
+    color: orange;
 }
+
+.li_lv_2_no_1:hover .lv_2_a_1,
+.li_lv_2_no_2:hover .lv_2_a_2,
+.li_lv_2_no_3:hover .lv_2_a_3,
+.li_lv_2_no_4:hover .lv_2_a_4,
+.li_lv_2_no_5:hover .lv_2_a_5{
+    color: orange;
+}
+
+.lv_3_a_1:hover,
+.lv_3_a_2:hover,
+.lv_3_a_3:hover,
+.lv_3_a_4:hover,
+.lv_3_a_5:hover{
+    color: orange;
+}
+/* a:hover span{
+   color: orange; 
+} */
 
 span{
     text-transform: capitalize;
@@ -58,7 +77,6 @@ span{
     padding: 0;
     padding-left: 10px;
     display: none;
-    z-index: 99;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -72,7 +90,6 @@ span{
     padding: 0;
     padding-left: 10px;
     display: none;
-    z-index: 99;
     flex-direction: column;
     justify-content: space-between;
 }
