@@ -43,7 +43,7 @@ span{
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .ul_menu_lv_2{
