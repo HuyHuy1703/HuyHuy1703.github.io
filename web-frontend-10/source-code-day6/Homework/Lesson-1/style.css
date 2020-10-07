@@ -9,15 +9,15 @@
 .intro{
     width: 200px;
     margin: 0 auto;
-    border: 1px solid red;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #484C4F;
 }
 
 .intro div{
-    margin: 20px;
-    text-transform: uppercase;
-    font-size: 30px;
+    margin: 20px; 
 }
 
 .intro .intro-animation span::before{
@@ -27,26 +27,81 @@
     background-color: #C66634;
     color: #fff;
     animation-name: intro_animation;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
-    transition-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 @keyframes intro_animation{
     10%{
         content: "learning";
         background-color: #1E8A54;
-        top: -10px;
     }
     20%{
         content: "coding";
         background-color: #C66634;
-        top: 0px;
+        transition: ease-in-out;
     }
     30%{
         content: "teaching";
         background-color: #5A3694;
-        top: 0px;
+    }
+}
+
+.gallery{
+    width: 40%;
+    margin: 20px auto;
+}
+
+.gallery .row{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery .row .photo{
+    border: 3px solid #fff;
+    margin: 5px;
+}
+
+.gallery .row .photo:hover{
+    transform: scale(1.3);
+}
+
+.button{
+    width: 15%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #3E82AC;
+    color: #fff;
+    transition-duration: 1s;
+}
+
+.button:hover{
+    background-color: #12A284;
+    border-radius: 30px;
+}
+
+.heart{
+    width: 15%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #FE7E74;
+    animation: heart_beat 0.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes heart_beat{
+    from{
+        font-size: 150px;
+    }
+    to{
+        font-size: 130px;
     }
 }
