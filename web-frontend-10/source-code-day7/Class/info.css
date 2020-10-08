@@ -103,14 +103,23 @@ a{
 }
 
 .product .photo{
-    width: 500px;
+    width: 700px;
     margin: 0px 10px;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
 }
 
 .product .photo img{
-    width: 100%;
+    width: 50%;
+    height: 400px;
     object-fit: cover;
+    margin: 0px 10px;
+}
+
+.product .photo img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 .info{
@@ -131,17 +140,6 @@ a{
 
 .info .details .col{
     margin: 0px 10px;
-}
-
-.row .thumbnail{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.row .thumbnail img{
-    width: 150px;
 }
 
 .button{
