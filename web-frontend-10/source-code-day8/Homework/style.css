@@ -81,6 +81,10 @@ form input::placeholder{
     color: #8D949E;
 }
 
+form input:focus::placeholder{
+    color: #ccd0d5;
+}
+
 .form .row select{
     width: 30%;
 }
