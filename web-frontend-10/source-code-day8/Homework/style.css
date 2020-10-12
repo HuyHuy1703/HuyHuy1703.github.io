@@ -60,14 +60,96 @@
     padding: 0px 15px;
 }
 
+form > .row > input{
+    margin: 0px 0px 10px 0px;
+    width: 48%;
+    background-color: #F5F6F7;
+    border: 1px solid #ccd0d5;
+}
+
+form > input{
+    margin: 10px 0px;
+    background-color: #F5F6F7;
+    border: 1px solid #ccd0d5;
+}
+
+form input:focus ,select:focus{
+    outline: 0;
+}
+
+form input::placeholder{
+    color: #8D949E;
+}
+
 .form .row select{
     width: 30%;
 }
 
+.form input{
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 5px;
+}
+.form select{
+    padding: 5px;
+    margin: 5px 0px 10px 0px;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+}
+
 .form .rdInput{
-    border: 1px solid #606770;
-    border-radius: 8px;
-    width: 20%;
-    height: 40px;
+    border: 1px solid #ccd0d5;
+    width: 30%;
+    padding: 9px 10px;
+    margin: 5px 0px 10px 0px;
+    line-height: 16px;
+    border-radius: 5px;
     align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #4865A0;
+    font-size: 11px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+label{
+    width: 100%;
+}
+
+.form .label{
+    color: #606770;
+}
+
+.form .policy{
+    color: #777;
+    margin: 5px 0 20px 0;
+    font-size: 11px;
+    text-align: justify;
+}
+
+.form button{
+    height: 36px;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 194px;
+}
+
+.form button:hover{
+    background-color: #119F16;
+    cursor: pointer;
 }
