@@ -228,33 +228,65 @@ section .gallery h2{
     text-transform: uppercase;
 }
 
-section .gallery .col_4{
-    position: relative;
+section .gallery .content{
+    width: 75%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-section .gallery .col_4 p{
-    position: absolute;
-    color: #1C1C1C;
-    bottom: 40%;
-    right: 0px;
-    font-size: 35px;
-    width: 400px;
+section .gallery .content .slideShow{
+    width: 3150px;
+    height: 600px;
+    animation: slideShow 10s infinite ease-in-out;
 }
 
-section .gallery .col_4 p span{
-    font-weight: bold;
-    animation: color 5s infinite;
+section .gallery .content .slideShow figure{
+    float: left;
+    width: 1050px;
+    height: 600px;
 }
 
-@keyframes color{
+section .gallery .content .slideShow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@keyframes slideShow{
     0%{
-        color: #8194C4;
+        margin-left: 0px;
+    }
+    10%{
+        margin-left: 0px;
+    }
+    20%{
+        margin-left: -1050px;
+    }
+    30%{
+        margin-left: -1050px;
+    }
+    40%{
+        margin-left: -2100px;
     }
     50%{
-        color: #EED8BA;
+        margin-left: -2100px;
+    }
+    60%{
+        margin-left: -2100px;
+    }
+    70%{
+        margin-left: -2100px;
+    }
+    80%{
+        margin-left: -1050px;
+    }
+    90%{
+        margin-left: -1050px;
     }
     100%{
-        color: #EF7062;
+        margin-left: 0px;
     }
 }
 
@@ -333,5 +365,8 @@ section .compare .content li{
         width: 75%;
         margin: 50px auto;
         padding: 0px 20px;
+    }
+    .cover_image{
+        height: 935px;
     }
 }
