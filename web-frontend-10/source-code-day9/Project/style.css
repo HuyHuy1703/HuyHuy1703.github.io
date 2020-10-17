@@ -302,7 +302,7 @@ section .compare .title{
 section .compare .title h2{
     font-size: 40px;
     font-weight: bold;
-    padding: 10px 0px;
+    padding: 50px 0 0 0;
 }
 
 section .compare .title a{
@@ -376,6 +376,9 @@ section .compare .content div a:hover{
         width: 100%;
         margin: 50px auto;
         padding: 0px 20px;
+    }
+    .cover_image{
+        height: 935px;
     }
 }
 
