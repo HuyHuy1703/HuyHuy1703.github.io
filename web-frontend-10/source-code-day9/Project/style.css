@@ -317,30 +317,57 @@ section .compare .content{
 }
 section .compare .content div{
     width: 30%;
+    margin: 20px 0px;
 }
 
 section .compare .content img{
     width: 100%;
-    object-fit: none;
-
+    height: 250px;
+    object-fit: contain;
 }
 
 section .compare .content ul{
-    padding: 0;
-    margin: 0;
+    margin: 15px auto;
+    padding-left: 50px;
 }
 section .compare .content li{
     padding: 0;
     margin: 0;
     list-style-type: none;
+    line-height: 2;
+    text-align: justify;
+}
+
+section .compare .content ul li:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section .compare .content div button{
+    margin-left: 50px;
+    padding: 10px 20px;
+    background-color: #0071E3;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+}
+section .compare .content div button:hover{
+    background-color: #0077ED;
+    cursor: pointer;
+}
+
+section .compare .content div a{
+    margin: 15px 0 0 50px;
+    display: block;
+    color: #1797FF;
+}
+
+section .compare .content div a:hover{
+    text-decoration: underline;
 }
 
 /* END COMPARE */
-
-
-
-
-
 
 
 /* @media */
