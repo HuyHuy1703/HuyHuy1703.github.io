@@ -6,6 +6,7 @@
     font-family: 'SF Pro Display' ,'SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.34;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -39,6 +40,10 @@
 
 a{
     text-decoration: none;
+}
+
+h2{
+    color: #0071E3;
 }
 
 .col_2{
@@ -302,6 +307,7 @@ section .compare .title{
 section .compare .title h2{
     font-size: 40px;
     font-weight: bold;
+    color: #1C1C1C;
     padding: 50px 0 0 0;
 }
 
@@ -370,32 +376,308 @@ section .compare .content div a:hover{
 /* END COMPARE */
 
 
+/* START CONTACT */
+
+.background{
+    background-color: #F5F5F7;
+}
+
+section .contact{
+    width: 75%;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
+
+section .contact h2{
+    padding-top: 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .contact .content{
+    width: 75%;
+    margin: 20px auto;
+    align-items: center;
+}
+
+section .contact .content div:nth-child(1){
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+section .contact .content div img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+section .contact form{
+    width: 400px;
+    height: 100%;
+    margin: 0px auto;
+    margin-left: 15px;
+}
+
+section .contact input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    font-size: 17px;
+    border-radius: 6px;
+    border: 1px solid ;
+}
+
+section .contact input::placeholder{
+    color: gray;
+}
+
+section .contact input:focus{
+    outline: 0;
+}
+
+section .contact button{
+    display: block;
+    padding: 10px 20px;
+    background-color: #0071E3;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+}
+
+section .contact button:hover{
+    background-color: #0077ED;
+    cursor: pointer;
+}
+
+section .contact textarea{
+    width: 100%;
+    padding: 5px 10px;
+    resize: none;
+}
+
+section .contact textarea{
+    padding: 5px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+section .contact textarea:focus{
+    outline: 0;
+}
+
+section .contact textarea::placeholder{
+    text-align: center;
+    line-height: 140px;
+    font-size: 17px;
+}
+
+/* END CONTACT */
+
+/* START ABOUT */
+
+section .about{
+    width: 75%;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
+
+section .about h2{
+    padding-top: 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .about a{
+    color: #fff;
+}
+
+section .about .content{
+    width: 75%;
+    margin: 20px auto;
+    align-items: center;
+    font-size: 25px;
+}
+
+section .about .content .info{
+    margin-right: 50px;
+}
+
+section .about .content .info_image{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+section .about .content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+section .about .content .info_image .overlay{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    padding: 10px 0 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+section .about .content .info_image:hover .overlay{
+    opacity: 1;
+}
+
+section .about .email{
+    width: 500px;
+    margin: 0 auto;
+}
+
+section .about .email input{
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+section .about .email input:focus{
+    outline: none;
+}
+
+section .about .email button{
+    width: 20%;
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color: #0071E3;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* END ABOUT */
+
+/* START FOOTER */
+
+footer .content{
+    width: 75%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+footer ul{
+    margin: 50px 100px;
+    width: 100%;
+}
+
+footer li{
+    list-style: none;
+    line-height: 2;
+    font-size: 20px;
+}
+
+footer li:nth-child(1){
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer a{
+    color: #1C1C1C;
+}
+footer a:hover{
+    color: #0071E3;
+}
+
+footer .social{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px;
+    color: #1C1C1C;
+    background-color: #d3d3d3;
+}
+footer .social a{
+    padding: 0px 10px;
+}
+
+/* END FOOTER */
+
+/* BTN TO TOP */
+
+.btn-top{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 50px;
+}
+.btn-top a{
+    color: #333333;
+}
+
+/* BTN TO TOP */
+
 /* @media */
 @media screen and (min-width : 768px){
-    section .feature, section .gallery, section .compare{
+    section .feature, section .gallery, section .compare, section .contact, section .about{
         width: 100%;
         margin: 50px auto;
         padding: 0px 20px;
     }
+    
+    footer .content{
+        width: 75%;
+        margin: 0px auto;
+        padding: 0px 20px;
+    }
+
     .cover_image{
         height: 935px;
     }
 }
 
 @media screen and (min-width : 1500px){
-    section .feature, section .gallery, section .compare{
+    section .feature, section .gallery, section .compare, section .contact, section .about{
         width: 90%;
         margin: 50px auto;
+        margin-top: 100px;
         padding: 0px 20px;
+    }
+
+    footer .content{
+        width: 75%;
+        margin: 0px auto;
+        margin-top: 100px;
+        padding: 0px 20px;
+    }
+
+    .cover_image{
+        height: 935px;
     }
 }
 
 @media screen and (min-width : 1900px){
-    section .feature, section .gallery, section .compare{
+    section .feature, section .gallery, section .compare, section .contact, section .about{
         width: 75%;
         margin: 50px auto;
         padding: 0px 20px;
     }
+
+    footer .content{
+        width: 75%;
+        margin: 0px auto;
+        margin-top: 100px;
+        padding: 0px 20px;
+    }
+
     .cover_image{
         height: 935px;
     }
