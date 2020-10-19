@@ -14,6 +14,11 @@
     margin: 0 auto;
 }
 
+.main_body{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .flex{
     display: flex;
 }
@@ -127,7 +132,7 @@ nav a:hover{
 
 .cover_image{
     width: 100%;
-    height: 900px;
+    height: 935px;
     background-image: url("img/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,6 +166,11 @@ nav a:hover{
 /* END COVER */
 
 /* START FEATURE */
+section .feature{
+    width: 100%;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
 
 section .feature h2{
     padding-top: 50px;
@@ -226,6 +236,12 @@ section .feature .content .map p span{
 
 
 /* START GALLERY */
+
+section .gallery{
+    width: 100%;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
 
 section .gallery h2{
     padding-top: 50px;
@@ -299,6 +315,12 @@ section .gallery .content .slideShow img{
 
 
 /* START COMPARE */
+
+section .compare{
+    width: 100%;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
 
 section .compare .title{
     text-align: center;
@@ -383,7 +405,7 @@ section .compare .content div a:hover{
 }
 
 section .contact{
-    width: 75%;
+    width: 100%;
     margin: 50px auto;
     padding: 0px 20px;
 }
@@ -479,7 +501,7 @@ section .contact textarea::placeholder{
 /* START ABOUT */
 
 section .about{
-    width: 75%;
+    width: 100%;
     margin: 50px auto;
     padding: 0px 20px;
 }
@@ -559,7 +581,7 @@ section .about .email button{
     padding: 10px 20px;
     margin-left: 5px;
     background-color: #0071E3;
-    border: 1px solid #000;
+    border: 1px solid #0071E3;
     border-radius: 5px;
     color: #fff;
     font-size: 20px;
@@ -570,9 +592,10 @@ section .about .email button{
 /* START FOOTER */
 
 footer .content{
-    width: 75%;
+    width: 100%;
     margin: 0px auto;
     padding: 0px 20px;
+    margin-top: 100px;
 }
 
 footer ul{
@@ -591,94 +614,77 @@ footer li:nth-child(1){
     font-size: 30px;
 }
 
-footer a{
+footer li a{
     color: #1C1C1C;
 }
-footer a:hover{
+footer li a:hover{
     color: #0071E3;
 }
 
 footer .social{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 0px;
     color: #1C1C1C;
-    background-color: #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    background-color: #F5F5F7;
 }
 footer .social a{
     padding: 0px 10px;
+    color: #1C1C1C;
+}
+
+footer .social a .fa-facebook-f:hover{
+    color: #18A9FD;
+}
+
+footer .social a .fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+footer .social a .fa-youtube:hover{
+    color: #FF0000;
+}
+
+footer .social a .fa-pinterest:hover{
+    color: #DF0002;
 }
 
 /* END FOOTER */
 
 /* BTN TO TOP */
 
-.btn-top{
+.btn-to-top{
     position: fixed;
     bottom: 20px;
     right: 30px;
     font-size: 50px;
 }
-.btn-top a{
+.btn-to-top a{
     color: #333333;
 }
+
 
 /* BTN TO TOP */
 
 /* @media */
 @media screen and (min-width : 768px){
-    section .feature, section .gallery, section .compare, section .contact, section .about{
+    .main_body{
         width: 100%;
-        margin: 50px auto;
-        padding: 0px 20px;
-    }
-    
-    footer .content{
-        width: 75%;
-        margin: 0px auto;
-        padding: 0px 20px;
-    }
-
-    .cover_image{
-        height: 935px;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width : 1500px){
-    section .feature, section .gallery, section .compare, section .contact, section .about{
+    .main_body{
         width: 90%;
-        margin: 50px auto;
-        margin-top: 100px;
-        padding: 0px 20px;
-    }
-
-    footer .content{
-        width: 75%;
-        margin: 0px auto;
-        margin-top: 100px;
-        padding: 0px 20px;
-    }
-
-    .cover_image{
-        height: 935px;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width : 1900px){
-    section .feature, section .gallery, section .compare, section .contact, section .about{
+    .main_body{
         width: 75%;
-        margin: 50px auto;
-        padding: 0px 20px;
-    }
-
-    footer .content{
-        width: 75%;
-        margin: 0px auto;
-        margin-top: 100px;
-        padding: 0px 20px;
-    }
-
-    .cover_image{
-        height: 935px;
+        margin: 0 auto;
     }
 }

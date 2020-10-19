@@ -12,7 +12,7 @@
     <div class="container">
         <nav>
             <ul class="flex between">
-                <li><a href="index.html"><i class="fab fa-apple"></i></a></li>
+                <li><a href="index.html#"><i class="fab fa-apple"></i></a></li>
                 <li><a href="index.html#features">feature</a></li>
                 <li><a href="index.html#gallery">gallery</a></li>
                 <li><a href="index.html#compare">compare</a></li>
@@ -37,6 +37,8 @@
                 <a href="#">Learn more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
+
+        <div class="main_body">
         <section>
             <div class="feature">
                 <h2 id="features">features</h2>
@@ -246,55 +248,58 @@
                 </div>
             </div>
         </section>
-        <div class="background">
-            <section class="section_contact">
-                <div class="contact">
-                    <h2 id="contact">Contact</h2>
-                    <div class="content flex center">
-                        <div>
-                            <img src="img/apple-care.png" alt="apple care" title="apple care">
-                        </div>
-                        <div>
-                            <form action="index.html" method="POST">
-                                <input type="text" name="fullName" placeholder="Enter your full name" value="" required>
-                                <input type="text" name="email" placeholder="Email" value="" required>
-                                <input type="text" name="phoneNumber" placeholder="Phone Number" value="" required>
-                                <input type="text" name="topic" placeholder="Topic" value="" required>
-                                <textarea name="content" id="user_content" cols="30" rows="7" placeholder="Content" required></textarea>
-                                <div class="flex center">
-                                    <button type="submit">Send</button>
-                                </div>
-                            </form>
-                        </div>
+      
+        <section class="section_contact">
+            <div class="contact">
+                <h2 id="contact">Contact</h2>
+                <div class="content flex center">
+                    <div>
+                        <img src="img/apple-care.png" alt="apple care" title="apple care">
                     </div>
-                </div>
-            </section>
-    
-            <section>
-                <div class="about">
-                    <h2 id="about">about</h2>
-                    <div class="content flex center">
-                        <div class="info">
-                            <p>Name : Trần Quang Huy</p>
-                            <p>Career : Front-End Developer</p>
-                            <p>Interests : Technology, Game</p>
-                        </div>
-                        <div class="info_image">
-                            <img src="img/avatar.png" alt="avatar" title="avatar">
-                            <div class="overlay">
-                                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
+                    <div>
+                        <form action="index.html" method="POST">
+                            <input type="text" name="fullName" placeholder="Enter your full name" value="" required>
+                            <input type="text" name="email" placeholder="Email" value="" required>
+                            <input type="text" name="phoneNumber" placeholder="Phone Number" value="" required>
+                            <input type="text" name="topic" placeholder="Topic" value="" required>
+                            <textarea name="content" id="user_content" cols="30" rows="7" placeholder="Content" required></textarea>
+                            <div class="flex center">
+                                <button type="submit">Send</button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="email">
-                        <form class="flex" action="index.html" method="POST">
-                            <input type="text" name="email" placeholder="Enter your email for more update" value="" required>
-                            <button type="submit">SEND</button>
                         </form>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+    
+        <section>
+            <div class="about">
+                <h2 id="about">about</h2>
+                <div class="content flex center">
+                    <div class="info">
+                        <p>Name : Trần Quang Huy</p>
+                        <p>Career : Front-End Developer</p>
+                        <p>Interests : Technology, Game</p>
+                    </div>
+                    <div class="info_image">
+                        <img src="img/avatar.png" alt="avatar" title="avatar">
+                        <div class="overlay">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="email">
+                    <form class="flex" action="index.html" method="POST">
+                        <input type="text" name="email" placeholder="Enter your email for more update" value="" required>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <div class="background">
             <footer>
                 <div class="content flex center">
                     <div>
@@ -328,15 +333,16 @@
                         </ul>
                     </div>
                 </div>
+                
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
                 </div>
             </footer>
         </div>
-        <div class="btn-top">
+        <div class="btn-to-top">
             <a href="index.html#"><i class="fas fa-caret-up"></i></a>
         </div>
     </div>
