@@ -2,7 +2,7 @@
 
 document.write(`<h2>1. Viết hàm chuyển đổi nhiệt độ từ độ C sang độ F và ngược lại</h2>`)
 document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °C sang độ °F dùng hàm <b>" c_toF() "</b></p>`)
-document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °C sang độ °F dùng hàm <b>" f_toC() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °F sang độ °C dùng hàm <b>" f_toC() "</b></p>`)
 
 document.write(`<h2>2. Viết hàm tính thế kỷ của 1 năm</h2>`)
 document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" centFromYear() "</b></p>`)
