@@ -1,17 +1,17 @@
 // js
 
 document.write(`<h2>1. Viết hàm chuyển đổi nhiệt độ từ độ C sang độ F và ngược lại</h2>`)
-document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °C sang độ °F dùng hàm <b>" c_toF() "</b></p>`)
-document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °F sang độ °C dùng hàm <b>" f_toC() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br/>Chuyển đổi từ °C sang độ °F dùng hàm <b>" c_toF() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br/>Chuyển đổi từ °F sang độ °C dùng hàm <b>" f_toC() "</b></p>`)
 
 document.write(`<h2>2. Viết hàm tính thế kỷ của 1 năm</h2>`)
-document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" centFromYear() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br/>Dùng hàm <b>" centFromYear() "</b></p>`)
 
 document.write(`<h2>3. Viết hàm cắt chuỗi</h2>`)
-document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" cutString() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br/>Dùng hàm <b>" cutString() "</b><br/><i>* tham số chuyền vào là 1 chuỗi<i></p>`)
 
 document.write(`<h2>4. Viết 1 hàm có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.</h2>`)
-document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" upperString() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br/>Dùng hàm <b>" capitalStr() "</b> <br/><i>* tham số chuyền vào là 1 chuỗi<i> </p>`)
 
 
 
@@ -35,7 +35,7 @@ function cutString(str){
 }
 
 // Hàm viết hoa chữ đầu tiền
-function upperStr(str){
+function capitalStr(str){
     let lowerStr = str.toLowerCase();
     let letter = str.slice(0,1)
     console.log(`${letter.toUpperCase() + lowerStr.substr(1)}`)
