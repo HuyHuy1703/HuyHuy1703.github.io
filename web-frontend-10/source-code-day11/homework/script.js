@@ -5,13 +5,13 @@ document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °C sang độ °
 document.write(`<p>Cách sử dụng :<br>Chuyển đổi từ °C sang độ °F dùng hàm <b>" f_toC() "</b></p>`)
 
 document.write(`<h2>2. Viết hàm tính thế kỷ của 1 năm</h2>`)
-document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" centFromYenbrr() "</b></p>`)
+document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" centFromYear() "</b></p>`)
 
-document.write(`<h2>3. </h2>`)
-document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" centFromYenbrr() "</b></p>`)
+document.write(`<h2>3. Viết hàm cắt chuỗi</h2>`)
+document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" cutString() "</b></p>`)
 
-document.write(`<h2></h2>`)
-document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" centFromYenbrr() "</b></p>`)
+document.write(`<h2>4. Viết 1 hàm có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.</h2>`)
+document.write(`<p>Cách sử dụng :<br>Dùng hàm <b>" upperString() "</b></p>`)
 
 
 
@@ -25,8 +25,8 @@ function f_toC(nbr){
 }
 
 // Hàm tính thế kỷ
-function centFromYenbrr(nbr){
-    console.log(`Yenbrr = ${nbr} => Century = ${Math.ceil(nbr/100)}`)
+function centFromYear(nbr){
+    console.log(`Year = ${nbr} => Century = ${Math.ceil(nbr/100)}`)
 }
 
 // Hàm cắt chuỗi
