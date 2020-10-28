@@ -26,9 +26,10 @@ function minMax(arr){
 
 // Hàm trả về vị trí đầu tiên của số lẻ, vị trí cuối cùng của số chẵn trong mảng bất kì
 function find(arr){
-    let first = arr[0]
-    let last = arr[arr.length-1]
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i])
-    }
+    const oddArr = arr.filter(oddNbr => oddNbr % 2 != 0)
+    const evenArr = arr.filter(evenNbr => evenNbr % 2 == 0)
+    let first = oddArr[0]
+    let last = evenArr[evenArr.length-1]
+
+    console.log(`Vị trí đầu tiên của số lẻ : ${first} \nVị trí cuối cùng của số chẵn : ${last}`)
 }
