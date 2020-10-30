@@ -2,13 +2,7 @@
 
 // 1. Viết hàm kiểm tra 2 số, trả về số lớn hơn.
 function checkNbr(nbr1, nbr2) {
-    if (nbr1 > nbr2) {
-        return nbr1
-    } else if (nbr1 < nbr2) {
-        return nbr2
-    } else {
-        return `Hai số bằng nhau`
-    }
+    return nbr1 > nbr2 ? nbr1 : nbr2
 }
 
 //2. Viết hàm tính n! (giai thừa) với n là số nguyên dương.
@@ -27,8 +21,7 @@ function tinhGiaiThua(n) {
 
 // 3. Viết hàm lấy ra một mảng các số chẵn từ mảng ban đầu và trả về mảng đã được sắp xếp giảm dần.
 function sortEvenNumber(arr) {
-    const newArr = arr.filter(evenNbr => evenNbr % 2 == 0).reverse()
-    return newArr
+    return newArr = arr.filter(evenNbr => evenNbr % 2 == 0).reverse()
 }
 
 // 4. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
@@ -57,4 +50,63 @@ function checkSeason() {
             season = "Winter"
     }
     return season
+}
+
+// 5. Cho một mảng các chuỗi, viết hàm sắp xếp mảng theo thứ thự bảng chữ cái.
+function sortStr_ASC(arr) {
+    return newArr = arr.map(str => str).sort()
+}
+
+// 6. Viết hàm đảo ngược một chuỗi từ một chuỗi cho trước.
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+
+// 7. Cho một số nguyên dương N, viết hàm kiểm tra N có phải là số nguyên tố.
+// (nbr - 1) để khi chia tránh gặp chính nó trong vòng lặp 
+function checkSoNT(nbr) {
+    let flag = true;
+
+    for (let i = 2; i < nbr - 1; i++) {
+        if (nbr % i == 0) {
+            flag = false
+            break;
+        }
+    }
+
+    if (nbr < 2) {
+        return `${nbr} không phải là số nguyên tố`
+    } else if (flag == true) {
+        return `${nbr} là số nguyên tố`
+    } else {
+        return `${nbr} không phải là số nguyên tố`
+    }
+}
+
+// 8. Cho một số nguyên dương N, viết hàm in ra màn hình những số hoàn hảo nhỏ hơn N (số hoàn hảo là số bằng tổng các ước số của nó mà không kể chính nó).
+function checkSoHH(nbr) {
+    let res = []
+    for (let i = 1; i <= nbr / 2; i++) {
+        if (nbr % i == 0) {
+            res.push(i)
+        }
+    }
+    return res
+}
+
+// 9. Viết chương trình vẽ một hình chữ nhật bằng các dấu * với chiều rộng và chiều cao cho trước (chiều rộng, chiều cao lớn hơn 1).
+function HCN(cd, cr) {
+    for (let i = 1; i <= cr; i++) {
+        
+        for (let j = 1; j <= cd; j++) {
+            document.write("*")
+        }
+
+        document.write("<br>")
+    }
+}
+
+// 10. Viết chương trình vẽ một tam giác cân bằng các dấu * với chiều cao cho trước (chiều cao lớn hơn 1).
+function tamGiac(){
+    
 }
