@@ -9,19 +9,17 @@ function checkNbr(nbr1, nbr2) {
 function tinhGiaiThua(n) {
     let giaiThua = 1;
 
-    if (n < 0) {
-        alert("Error")
-    } else {
-        for (let i = 1; i < n; i++) {
-            giaiThua *= i
-        }
-        return giaiThua
+    for (let i = 1; i <= n; i++) {
+        giaiThua *= i
     }
+    return giaiThua
+
 }
 
 // 3. Viết hàm lấy ra một mảng các số chẵn từ mảng ban đầu và trả về mảng đã được sắp xếp giảm dần.
 function sortEvenNumber(arr) {
-    return newArr = arr.filter(evenNbr => evenNbr % 2 == 0).reverse()
+    const newArr = arr.filter(evenNbr => evenNbr % 2 == 0)
+    return newArr.sort(function (a, b) { return b - a })
 }
 
 // 4. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
@@ -40,21 +38,24 @@ function checkSeason() {
         case 4:
         case 5:
             season = "Summer"
+            break
         case 6:
         case 7:
         case 8:
             season = "Autumn"
+            break
         case 9:
         case 10:
         case 11:
             season = "Winter"
+            break
     }
     return season
 }
 
 // 5. Cho một mảng các chuỗi, viết hàm sắp xếp mảng theo thứ thự bảng chữ cái.
 function sortStr_ASC(arr) {
-    return newArr = arr.map(str => str).sort()
+    return arr.sort()
 }
 
 // 6. Viết hàm đảo ngược một chuỗi từ một chuỗi cho trước.
@@ -97,16 +98,23 @@ function checkSoHH(nbr) {
 // 9. Viết chương trình vẽ một hình chữ nhật bằng các dấu * với chiều rộng và chiều cao cho trước (chiều rộng, chiều cao lớn hơn 1).
 function HCN(cd, cr) {
     for (let i = 1; i <= cr; i++) {
-        
         for (let j = 1; j <= cd; j++) {
             document.write("*")
         }
-
         document.write("<br>")
     }
 }
 
 // 10. Viết chương trình vẽ một tam giác cân bằng các dấu * với chiều cao cho trước (chiều cao lớn hơn 1).
-function tamGiac(){
-    
+function tamGiac(n) {
+
+    for (i = 1; i <= n; i++) {
+        for (let j = n - 1; j >= i; j--) {
+            document.write("&nbsp&nbsp");
+        }
+        for (let k = 1; k <= (2 * i - 1); k++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
 }
