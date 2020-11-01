@@ -41,5 +41,5 @@ function find(arr){
     let first = oddArr[0]
     let last = evenArr[evenArr.length-1]
 
-    console.log(`Vị trí đầu tiên của số lẻ ${first} : ${(arr.indexOf(first))} \nVị trí cuối cùng của số chẵn ${last} : ${(arr.indexOf(last))}`)
+    console.log(`First odd : ${first} ; index : ${(arr.indexOf(first))} \nLast even : ${last} ; index : ${(arr.indexOf(last))}`)
 }

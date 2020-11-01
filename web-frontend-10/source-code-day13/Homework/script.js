@@ -13,13 +13,34 @@ function tinhGiaiThua(n) {
         giaiThua *= i
     }
     return giaiThua
-
 }
 
 // 3. Viết hàm lấy ra một mảng các số chẵn từ mảng ban đầu và trả về mảng đã được sắp xếp giảm dần.
 function sortEvenNumber(arr) {
     const newArr = arr.filter(evenNbr => evenNbr % 2 == 0)
     return newArr.sort(function (a, b) { return b - a })
+}
+
+function xepSoChan(arr) {
+    let arrChan = []
+
+    for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            arrChan.push(arr[i])
+        }
+    }
+    console.log(arrChan)
+
+    for (let i = 0; i < arrChan.length; i++) {
+        for (let j = 0; j < arrChan.length; j++) {
+            if (arrChan[j] < arrChan[j + 1]) {
+                let temp = arrChan[j]
+                arrChan[j] = arrChan[j + 1]
+                arrChan[j + 1] = temp
+            }
+        }
+    }
+    console.log(arrChan)
 }
 
 // 4. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
@@ -86,19 +107,25 @@ function checkSoNT(nbr) {
 
 // 8. Cho một số nguyên dương N, viết hàm in ra màn hình những số hoàn hảo nhỏ hơn N (số hoàn hảo là số bằng tổng các ước số của nó mà không kể chính nó).
 function checkSoHH(nbr) {
-    let res = []
+    let res = ""
+    let sum = 0
     for (let i = 1; i <= nbr / 2; i++) {
         if (nbr % i == 0) {
-            res.push(i)
+            sum += i
+            res += ` ${i}`
         }
     }
-    return res
+
+    if (sum == nbr) {
+        return res
+    }
+    return `${nbr} Không phải số hoàn hảo`
 }
 
 // 9. Viết chương trình vẽ một hình chữ nhật bằng các dấu * với chiều rộng và chiều cao cho trước (chiều rộng, chiều cao lớn hơn 1).
 function HCN(cd, cr) {
-    for (let i = 1; i <= cr; i++) {
-        for (let j = 1; j <= cd; j++) {
+    for (let i = 1; i <= cd; i++) {
+        for (let j = 1; j <= cr; j++) {
             document.write("*")
         }
         document.write("<br>")
