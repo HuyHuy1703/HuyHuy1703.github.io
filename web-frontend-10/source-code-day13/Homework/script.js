@@ -21,27 +21,27 @@ function sortEvenNumber(arr) {
     return newArr.sort(function (a, b) { return b - a })
 }
 
-function xepSoChan(arr) {
-    let arrChan = []
+// function xepSoChan(arr) {
+//     let arrChan = []
 
-    for (let i = 0; i <= arr.length; i++) {
-        if (arr[i] % 2 == 0) {
-            arrChan.push(arr[i])
-        }
-    }
-    console.log(arrChan)
+//     for (let i = 0; i <= arr.length; i++) {
+//         if (arr[i] % 2 == 0) {
+//             arrChan.push(arr[i])
+//         }
+//     }
+//     console.log(arrChan)
 
-    for (let i = 0; i < arrChan.length; i++) {
-        for (let j = 0; j < arrChan.length; j++) {
-            if (arrChan[j] < arrChan[j + 1]) {
-                let temp = arrChan[j]
-                arrChan[j] = arrChan[j + 1]
-                arrChan[j + 1] = temp
-            }
-        }
-    }
-    console.log(arrChan)
-}
+//     for (let i = 0; i < arrChan.length; i++) {
+//         for (let j = 0; j < arrChan.length; j++) {
+//             if (arrChan[j] < arrChan[j + 1]) {
+//                 let temp = arrChan[j]
+//                 arrChan[j] = arrChan[j + 1]
+//                 arrChan[j + 1] = temp
+//             }
+//         }
+//     }
+//     console.log(arrChan)
+// }
 
 // 4. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
 // - Mùa xuân từ tháng 1 đến tháng 3
@@ -123,7 +123,7 @@ function checkSoHH(nbr) {
 }
 
 // 9. Viết chương trình vẽ một hình chữ nhật bằng các dấu * với chiều rộng và chiều cao cho trước (chiều rộng, chiều cao lớn hơn 1).
-function HCN(cd, cr) {
+function hcn(cd, cr) {
     for (let i = 1; i <= cd; i++) {
         for (let j = 1; j <= cr; j++) {
             document.write("*")
@@ -133,13 +133,14 @@ function HCN(cd, cr) {
 }
 
 // 10. Viết chương trình vẽ một tam giác cân bằng các dấu * với chiều cao cho trước (chiều cao lớn hơn 1).
-function tamGiac(n) {
+
+function tamGiacCan(n) {
 
     for (i = 1; i <= n; i++) {
-        for (let j = n - 1; j >= i; j--) {
+        for (let j = 1; j <= n - i; j++) {
             document.write("&nbsp&nbsp");
         }
-        for (let k = 1; k <= (2 * i - 1); k++) {
+        for (let j = 1; j <= (2 * i - 1); j++) {
             document.write("*");
         }
         document.write("<br>");
