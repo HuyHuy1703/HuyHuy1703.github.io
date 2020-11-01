@@ -23,7 +23,7 @@ function checkNegative(arr){
 function minMax(arr){
     let min = arr[0]
     let max = arr[0]
-    for(let i = 0; i < arr.length; i++){
+    for(let i = 1; i < arr.length; i++){
         if(min > arr[i]){
             min = arr[i]
         }
@@ -41,5 +41,5 @@ function find(arr){
     let first = oddArr[0]
     let last = evenArr[evenArr.length-1]
 
-    console.log(`Vị trí đầu tiên của số lẻ : ${first} \nVị trí cuối cùng của số chẵn : ${last}`)
+    console.log(`Vị trí đầu tiên của số lẻ ${first} : ${(arr.indexOf(first))} \nVị trí cuối cùng của số chẵn ${last} : ${(arr.indexOf(last))}`)
 }
