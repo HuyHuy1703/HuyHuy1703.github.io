@@ -122,6 +122,20 @@ function checkSoHH(nbr) {
     return `${nbr} Không phải số hoàn hảo`
 }
 
+function printSoHH(nbr){
+    let sum
+    for(let i = 2; i <= nbr; i++){
+        sum = 1
+        for(j = 2; j <= i / 2; j++){
+            if(i % j == 0)
+            sum += j
+        }
+        if(sum == i){
+            console.log(i)
+        }
+    }
+}
+
 // 9. Viết chương trình vẽ một hình chữ nhật bằng các dấu * với chiều rộng và chiều cao cho trước (chiều rộng, chiều cao lớn hơn 1).
 function hcn(cd, cr) {
     for (let i = 1; i <= cd; i++) {
