@@ -43,6 +43,21 @@ function sortEvenNumber(arr) {
 //     console.log(arrChan)
 // }
 
+// Linh
+// function findEvenNumber (a1){
+//     let evenNumber = a1.filter((number)=> number%2 == 0);
+//     let soChan = evenNumber[0];
+//     for (let i = 0; i < evenNumber.length-1; i++){
+//         for (let j = i+ 1; j < evenNumber.length; j++){
+//             if (evenNumber[i] < evenNumber[j]){
+//                 soChan = evenNumber[j];
+//                 evenNumber[j] = evenNumber[i];
+//                 evenNumber[i] = soChan;
+//             }
+//         }
+//     } return evenNumber;
+// }
+
 // 4. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
 // - Mùa xuân từ tháng 1 đến tháng 3
 // - Mùa hè từ tháng 4 đến tháng 6
