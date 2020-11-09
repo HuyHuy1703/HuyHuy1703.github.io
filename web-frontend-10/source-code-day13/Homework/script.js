@@ -121,6 +121,7 @@ function checkSoNT(nbr) {
 }
 
 // 8. Cho một số nguyên dương N, viết hàm in ra màn hình những số hoàn hảo nhỏ hơn N (số hoàn hảo là số bằng tổng các ước số của nó mà không kể chính nó).
+// In ra các ước
 function checkSoHH(nbr) {
     let res = ""
     let sum = 0
@@ -137,6 +138,7 @@ function checkSoHH(nbr) {
     return `${nbr} Không phải số hoàn hảo`
 }
 
+// in ra số hoàn hảo
 function printSoHH(nbr){
     let sum
     for(let i = 2; i <= nbr; i++){
@@ -167,11 +169,50 @@ function tamGiacCan(n) {
 
     for (i = 1; i <= n; i++) {
         for (let j = 1; j <= n - i; j++) {
-            document.write("&nbsp&nbsp");
+            // document.write("&nbsp&nbsp");
+            document.write("a");
         }
         for (let j = 1; j <= (2 * i - 1); j++) {
             document.write("*");
         }
         document.write("<br>");
     }
+}
+
+
+function tamGiacCan1(h) {
+    var str = "";
+    for (let i = 0; i < h; i++) {
+      for (let j = 0; j < 2 * h - 1; j++) {
+        if (j >= h - 1 - i && j <= h - 1 + i) {
+        //   str += "*";\
+        document.write("*");
+        } else {
+        //   str += "&nbsp&nbsp";
+        document.write("a");
+        }
+      }
+    //   str += "<br />";
+    document.write("<br>");
+    }
+  
+    document.writeln(str);
+  }
+
+  function bai6(string){
+    var newstring = ""
+    for(var i = string.length - 1; i >= 0 ; i--){
+        newstring +=string[i]
+        // console.log(string[i])
+        if(string[i] === string[i].toUpperCase()){
+            console.log(string[i])
+
+            string[i].toLowerCase()
+        }else if(string[i] === string[i].toLowerCase()){
+            string[i].toUpperCase()
+        }
+    }
+    
+
+    return newstring
 }
