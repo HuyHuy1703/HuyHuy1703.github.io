@@ -15,7 +15,7 @@ function checkSoNT(nbr){
     if(nbr < 2){
         return false;
     } 
-    for(let i = 2; i <= Math.sqrt(nbr); ++i){
+    for(let i = 2; i <= Math.sqrt(nbr); i++){
         if(nbr % i == 0){
             return false;
         } 
@@ -158,5 +158,25 @@ function tamGiacCanNguoc(h) {
             document.write("*")
         }
         document.write("<br>")
+    }
+}
+
+// 12. Vẽ chữ X
+function drawX(h){
+    if(h<=0){
+        return `Chiều cao phải lớn hơn 0!`;
+    }else if(h%2==0){
+        return `Chiều cao phải là số lẻ`;
+    }else{
+        for(let i=1; i<=h; i++){
+            for(let j=1;j<=h;j++){
+                if(j==i || j==h+1-i){
+                    document.write("*");
+                }else{
+                    document.write("&ensp;");
+                }
+            }
+            document.writeln("<br/>");
+        }
     }
 }

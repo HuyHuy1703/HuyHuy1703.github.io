@@ -21,6 +21,7 @@
             <input type="text" name="money" id="money">
             <input type="button" value="Convert Currency" onclick="convert()">
         </form>
+        <p id="res"></p>
     </div>
 
     <script>
@@ -30,10 +31,10 @@
             let eur = document.getElementById("EUR").checked
 
             if(usd == true){
-                alert(value * 23176.50)
+                document.getElementById("res").innerHTML = value * 23176.50
             }
             if(eur == true){
-                alert(value * 27517.46)
+                document.getElementById("res").innerHTML = value * 27517.46
             }
         }
     </script>
