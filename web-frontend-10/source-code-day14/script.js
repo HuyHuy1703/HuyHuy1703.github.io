@@ -162,7 +162,7 @@ function tamGiacCanNguoc(h) {
 }
 
 // 12. Vẽ chữ X
-function drawX(h){
+function veX(h){
     if(h<=0){
         return `Chiều cao phải lớn hơn 0!`;
     }else if(h%2==0){
