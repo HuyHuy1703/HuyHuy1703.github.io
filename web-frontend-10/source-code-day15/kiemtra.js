@@ -18,42 +18,33 @@ function convertTemp() {
     }
 }
 
-// viết hàm tìm ra số lớn thứ nhì trong mảng
-function pushElement(){
-    let arr = []
-    let element = document.getElementById("number").value
-    let res1 = document.getElementById("res1")
-
-    arr.push(element)
-    res1.innerHTML = arr
-    console.log(arr)
-}
+// Bài 2: Viết hàm tìm ra số lớn thứ nhì trong mảng
 
 function findSecondMax(arr) {
-    let max = 0
-    let secondMax = 0
-
     if(arr.length == 2){
-        alert("Do dai mang phai lon hon 2")
+        alert("Độ dài mảng phải lớn hơn 2 phần tử")
     }else{
         for (let i = 0; i <= arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i]
-            }
-        }
-        
-        for(let i = 0; i <= arr.length; i++){
-            if(max == arr[i]){
-                continue
-            }else if(secondMax < arr[i]){
-                secondMax = arr[i]
+            for(let j = 0; j <= arr.length; j++){
+                if(arr[j] < arr[j+1]){
+                    let temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
             }
         }
     }
+    let secondMax = arr[1]
 
-    console.log(`Số lớn thứ hai là : ${secondMax}`)
+    return `Số lớn thứ hai là : ${secondMax}`
 }
 
+function findSecondMax_2(arr){
+    arr.sort(function(a,b){return b-a});
+    return `Số lớn thứ hai là : ${arr[1]}`
+}
+
+// Bài 3 : Viết hàm tìm ra chuỗi có độ dài lớn nhất.
 function findMaxLength(arr){
     let strLength = 0
     let longestStr = ""
@@ -67,6 +58,7 @@ function findMaxLength(arr){
     console.log(`Chuỗi có độ dài lớn nhất là : ${longestStr}`)
 }
 
+// Bài 4: Viết hàm kiểm tra kết thúc chuỗi
 function checkLastChar(str,char){
     let lengthChar = char.length
     let letter = str.slice(-lengthChar)
@@ -78,15 +70,15 @@ function checkLastChar(str,char){
     }
 }
 
+// Bài 5 : Viết hàm kiểm tra xem có phần tử nào bị lặp lại hay không
 function checkArray(arr){
+    let check = false
     for(let i = 0; i < arr.length; i++){
         for(let j = i + 1; j < arr.length; j++){
             if(arr[i] === arr[j]){
-                return true
-            }else{
-                return false
+                check = true
             }
-            // console.log(arr[i])
         }
     }
+    return check
 }
