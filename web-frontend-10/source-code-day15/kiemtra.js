@@ -55,7 +55,7 @@ function findMaxLength(arr) {
             longestStr = arr[i]
         }
     }
-    console.log(`Chuỗi có độ dài lớn nhất là : ${longestStr}`)
+    return `Chuỗi có độ dài lớn nhất là : ${longestStr}`
 }
 
 // Bài 4: Viết hàm kiểm tra kết thúc chuỗi
@@ -77,6 +77,7 @@ function checkArray(arr) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] === arr[j]) {
                 check = true
+                break
             }
         }
     }
