@@ -16,6 +16,7 @@
 
 .btn{
     height: 25px;
+    display: block;
 }
 
 #res{
@@ -26,4 +27,11 @@
 
 p{
     font-size: 18px;
+}
+
+.input-text1{
+    display: inline;
+}
+#res_array{
+    display: inline;
 }
