@@ -29,11 +29,19 @@ function changeFontSize(nbr) {
     nbr = document.getElementById("changeFontSize").value
     let res = parseInt(nbr)
     let p = document.querySelectorAll("p")
+    let err = document.getElementsByClassName("res")
 
-    p[0].style.fontSize = `${res}px`
-    p[1].style.fontSize = `${res}px`
-    p[2].style.fontSize = `${res}px`
+    console.log(res)
 
+    if(isNaN(res) == true){
+        err[0].innerHTML = `Is not a number`
+        err[0].style.color = "red"
+    }else{
+        err[0].innerHTML = ""
+        for(let i = 0; i <= p.length; i++){
+            p[i].style.fontSize = `${res}px`
+        }
+    }
 }
 
 function computed() {
@@ -68,7 +76,6 @@ function decreaseFontSize(paragraph) {
     paragraph = document.getElementById("element").value
     p = document.getElementById(paragraph)
     
-
     let com = window.getComputedStyle(p);
     result = com.getPropertyValue("font-size").substring(0,2)
     result = parseInt(result)
