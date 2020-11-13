@@ -59,11 +59,21 @@
         <hr>
         <div class="control-panel">
             <h3>Control Panel</h3>
+            <div>
+                Choose :
+                <br>
+                Paragraph 1 type p1
+                <br>
+                Paragraph 2 type p2
+                <br>
+                Paragraph 3 type p3
+            </div>
             <div class="option">
                 <div class="input">
                     <button class="btn" type="button" onclick="changeColor()">Chang Text Color</button>
                 </div>
                 <div class="input">
+                    <div>Type color's name or Hex Code to change background color</div>
                     <button class="btn" type="button" onclick="changBgColor()">Chang BG Color</button>
                     <input type="text" name="bgColor" id="bgColor" value="">
                 </div>
@@ -73,12 +83,14 @@
                     <input type="text" name="changeContent" id="paste" placeholder="To" value="">
                 </div>
                 <div class="input">
+                    <div>Type number to change font size</div>
                     <button class="btn" type="button" onclick="changeFontSize()">Change Font Size</button>
                     <input type="text" name="changeFontSize" id="changeFontSize" value="">
                 </div>
                 <div class="input">
+                    <div>Choose Paragraph to change font size</div>
                     <button class="btn" type="button" onclick="decreaseFontSize()"><i class="fas fa-minus"></i></button>
-                    <input type="text" name="paragraph" onchange="computed()" id="element" placeholder="Paragraph to change font size" value="">
+                    <input type="text" name="paragraph" onchange="computed()" id="element" value="">
                     <button class="btn" type="button" onclick="increaseFontSize()"><i class="fas fa-plus"></i></button>
                 </div>
             </div>

@@ -47,18 +47,37 @@ function computed() {
 
 function increaseFontSize(paragraph) {
     computed()
-    let curentSize = res
     paragraph = document.getElementById("element").value
     p = document.getElementById(paragraph)
-    
-    p.style.fontSize = curentSize + 1 + "px"
+
+    let com = window.getComputedStyle(p);
+    result = com.getPropertyValue("font-size").substring(0,2)
+    result = parseInt(result)
+    let curentSize = result
+
+    if(curentSize < 30){
+        p.style.fontSize = res + 1 + "px"
+    }else{
+        alert("Kích thước tăng lên không được vượt quá 30 pixels")
+        return false
+    }
 }
 
 function decreaseFontSize(paragraph) {
     computed()
-    let curentSize = res
     paragraph = document.getElementById("element").value
     p = document.getElementById(paragraph)
     
-    p.style.fontSize = curentSize - 1 + "px"
+
+    let com = window.getComputedStyle(p);
+    result = com.getPropertyValue("font-size").substring(0,2)
+    result = parseInt(result)
+    let curentSize = result
+
+    if(curentSize <= 10){
+        alert("Kích thước giảm xuống không vượt quá 10 pixels")
+        return false
+    }else{
+        p.style.fontSize = res - 1 + "px"
+    }
 }
