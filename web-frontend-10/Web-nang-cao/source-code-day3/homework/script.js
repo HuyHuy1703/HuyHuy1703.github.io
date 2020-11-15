@@ -5,7 +5,7 @@ let monitor = document.getElementById("monitor")
 
 // Lấy giá trị theo từng nút bấm
 function get_val(val){
-    monitor.value += val
+    monitor.value += val.value
 }
 
 function _clear(){

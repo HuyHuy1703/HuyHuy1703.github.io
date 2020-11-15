@@ -28,7 +28,7 @@ input[name="monitor"]{
     text-align: right;
     font-size: 30px;
     outline: 0;
-    cursor: unset;
+    cursor: default;
 }
 
 .control-panel{
@@ -44,7 +44,7 @@ input[name="monitor"]{
     justify-content: center;
 }
 
-.control-panel input{
+.control-panel input, button{
     width: 100%;
     height: 60px;
     font-size: 20px;
