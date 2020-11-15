@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Calculator</title>
 </head>
 <body>
     <div class="container">
@@ -13,33 +14,33 @@
             <div class="control-panel">
                 <div class="row">
                     <button name="clear" id="clear" value="C" onclick="_clear()">C</button>
-                    <button type="button" name="negative" id="negative" value="-" onclick="negative()">-</button>
-                    <button type="button" name="percent" id="percent" value="%" onclick="percent()">%</button>
-                    <button type="button" name="divide" id="divide" value="/" onclick="get_val(this)">:</button>
+                    <button name="negative" id="negative" value="-" onclick="negative()">±</button>
+                    <button name="percent" id="percent" value="%" onclick="percent()"><i class="fas fa-percentage"></i></button>
+                    <button name="divide" id="divide" value="/" onclick="get_val(this)"><i class="fas fa-divide"></i></button>
                 </div>
                 <div class="row">
-                    <button type="button" name="nbr_7" id="nbr_7" value="7" onclick="get_val(this)">7</button>
-                    <button type="button" name="nbr_8" id="nbr_8" value="8" onclick="get_val(this)">8</button>
-                    <button type="button" name="nbr_9" id="nbr_9" value="9" onclick="get_val(this)">9</button>
-                    <button type="button" name="multi" id="multi" value="*" onclick="get_val(this)">x</button>
+                    <button name="nbr_7" id="nbr_7" value="7" onclick="get_val(this)">7</button>
+                    <button name="nbr_8" id="nbr_8" value="8" onclick="get_val(this)">8</button>
+                    <button name="nbr_9" id="nbr_9" value="9" onclick="get_val(this)">9</button>
+                    <button name="multi" id="multi" value="*" onclick="get_val(this)">x</button>
                 </div>
                 <div class="row">
-                    <button type="button" name="nbr_4" id="nbr_4" value="4" onclick="get_val(this)">4</button>
-                    <button type="button" name="nbr_5" id="nbr_5" value="5" onclick="get_val(this)">5</button>
-                    <button type="button" name="nbr_6" id="nbr_6" value="6" onclick="get_val(this)">6</button>
-                    <button type="button" name="sub" id="sub" value="-" onclick="get_val(this)">-</button>
+                    <button name="nbr_4" id="nbr_4" value="4" onclick="get_val(this)">4</button>
+                    <button name="nbr_5" id="nbr_5" value="5" onclick="get_val(this)">5</button>
+                    <button name="nbr_6" id="nbr_6" value="6" onclick="get_val(this)">6</button>
+                    <button name="sub" id="sub" value="-" onclick="get_val(this)"><i class="fas fa-minus"></i></button>
                 </div>
                 <div class="row">
-                    <button type="button" name="nbr_1" id="nbr_1" value="1" onclick="get_val(this)">1</button>
-                    <button type="button" name="nbr_2" id="nbr_2" value="2" onclick="get_val(this)">2</button>
-                    <button type="button" name="nbr_3" id="nbr_3" value="3" onclick="get_val(this)">3</button>
-                    <button type="button" name="sum" id="sum" value="+" onclick="get_val(this)">+</button>
+                    <button name="nbr_1" id="nbr_1" value="1" onclick="get_val(this)">1</button>
+                    <button name="nbr_2" id="nbr_2" value="2" onclick="get_val(this)">2</button>
+                    <button name="nbr_3" id="nbr_3" value="3" onclick="get_val(this)">3</button>
+                    <button name="sum" id="sum" value="+" onclick="get_val(this)"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="row">
-                    <button type="button" name="nbr_0" id="nbr_0" value="0" onclick="get_val(this)">0</button>
-                    <button type="button" name="comma" id="comma" value="." onclick="get_val(this)">.</button>
-                    <button type="button" name="del" id="del" value="del" onclick="_del()">del</button>
-                    <button type="button" name="equal" id="equal" value="=" onclick="equal()">=</button>
+                    <button name="nbr_0" id="nbr_0" value="0" onclick="get_val(this)">0</button>
+                    <button name="comma" id="comma" value="." onclick="get_val(this)">.</button>
+                    <button name="del" id="del" value="del" onclick="_del()"><i class="fas fa-backspace"></i></button>
+                    <button name="equal" id="equal" value="=" onclick="equal()"><i class="fas fa-equals"></i></button>
                 </div>
             </div>
         </div>
