@@ -100,3 +100,15 @@ function checkArray(arr) {
 }
 
 
+function checkArray(arr) {
+    let check = false
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                check = true
+                break
+            }
+        }
+    }
+    return check
+}

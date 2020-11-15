@@ -19,7 +19,6 @@ function convertTemp() {
 }
 
 // Bài 2: Viết hàm tìm ra số lớn thứ nhì trong mảng
-
 function findSecondMax(arr) {
     if (arr.length == 2) {
         alert("Độ dài mảng phải lớn hơn 2 phần tử")
@@ -83,5 +82,7 @@ function checkArray(arr) {
     }
     return check
 }
+
+
 
 

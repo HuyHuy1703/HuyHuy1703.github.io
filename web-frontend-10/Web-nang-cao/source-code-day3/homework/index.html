@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" name="monitor" id="monitor" value="">
+            <div class="control-panel">
+                <div class="row">
+                    <input type="button" name="clear" id="clear" value="C" onclick="_clear()">
+                    <input type="button" name="negative" id="negative" value="±" onclick="negative()">
+                    <input type="button" name="percent" id="percent" value="%" onclick="percent()">
+                    <input type="button" name="divide" id="divide" value="/" onclick="get_val(this.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="nbr_7" id="nbr_7" value="7" onclick="get_val(this.value)">
+                    <input type="button" name="nbr_8" id="nbr_8" value="8" onclick="get_val(this.value)">
+                    <input type="button" name="nbr_9" id="nbr_9" value="9" onclick="get_val(this.value)">
+                    <input type="button" name="multi" id="multi" value="*" onclick="get_val(this.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="nbr_4" id="nbr_4" value="4" onclick="get_val(this.value)">
+                    <input type="button" name="nbr_5" id="nbr_5" value="5" onclick="get_val(this.value)">
+                    <input type="button" name="nbr_6" id="nbr_6" value="6" onclick="get_val(this.value)"">
+                    <input type="button" name="sub" id="sub" value="-" onclick="get_val(this.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="nbr_1" id="nbr_1" value="1" onclick="get_val(this.value)">
+                    <input type="button" name="nbr_2" id="nbr_2" value="2" onclick="get_val(this.value)">
+                    <input type="button" name="nbr_3" id="nbr_3" value="3" onclick="get_val(this.value)">
+                    <input type="button" name="sum" id="sum" value="+" onclick="get_val(this.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="nbr_0" id="nbr_0" value="0" onclick="get_val(this.value)">
+                    <input type="button" name="comma" id="comma" value="." onclick="get_val(this.value)">
+                    <input type="button" name="del" id="del" value="del" onclick="_del()">
+                    <input type="button" name="equal" id="equal" value="=" onclick="equal()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
