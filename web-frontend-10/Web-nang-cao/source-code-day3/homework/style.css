@@ -11,6 +11,11 @@
     justify-content: center;
 }
 
+.caption{
+    margin: 10px 0px 0px 25px;
+    font-size: 22px;
+}
+
 .calculator{
     border: 1px solid black;
     width: 400px;
@@ -51,4 +56,30 @@ input[name="monitor"]{
     font-size: 20px;
     font-weight: 900;
     margin: 5px;
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 0px #f8f9fa;
+    outline: 0;
+}
+
+.control-panel button:hover{
+    color: #212529;
+    background-color: #e2e6ea;
+    border: 0px #dae0e5;
+}
+
+#clear{
+    color: #FFF;
+    background-color: #ff2f44;
+    border: 0px #ff2f44;
+}
+
+#clear:hover{
+    color: #FFF;
+    background-color: #e70017;
+    border: 0px #e70017;
+}
+
+#divide, #multi, #sub, #sum, #del, #equal{
+    color: #00AAFF;
 }

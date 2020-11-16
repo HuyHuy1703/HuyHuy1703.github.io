@@ -3,15 +3,21 @@
 // Lấy thông tin màn hình 
 let monitor = document.getElementById("monitor")
 
-// Lấy giá trị theo từng nút bấm
-function get_val(val){
-    monitor.value += val.value
+// Gán sự kiện và lấy giá trị theo từng nút bấm
+let btn = document.getElementsByName("btn")
+
+for(let i = 0; i < btn.length; i++){
+    btn[i].addEventListener("click", function (){
+        monitor.value += btn[i].value
+    })
 }
 
+// Xóa màn hình
 function _clear(){
     monitor.value = ""
 }
 
+// Tính phần trăm
 function percent(){
     monitor.value = monitor.value / 100
 }
@@ -30,6 +36,7 @@ function _del(){
     monitor.value = monitor.value.slice(0, len - 1)
 }
 
+// Tính kêt quả
 function equal(){
     monitor.value = eval(monitor.value)
 }
