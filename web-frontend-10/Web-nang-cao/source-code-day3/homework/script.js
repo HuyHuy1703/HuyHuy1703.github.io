@@ -56,5 +56,9 @@ function _del(){
 // Tính kêt quả
 function equal(){
     monitor.value = eval(monitor.value)
+    let res = monitor.value
+
+let a = res.includes(".")
+console.log(a)
 }
 
