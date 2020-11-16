@@ -17,13 +17,30 @@ function _clear(){
     monitor.value = ""
 }
 
+// Tính căn bậc hai
+function _sqrt(){
+    monitor.value = Math.sqrt(monitor.value)
+}
+
+// Tính giai thừa
+function giaiThua() {
+    let giaiThua = 1;
+
+    for (let i = 1; i <= monitor.value; i++) {
+        giaiThua *= i
+    }
+    
+    monitor.value = giaiThua
+}
+
 // Tính phần trăm
 function percent(){
     monitor.value = monitor.value / 100
 }
 
-function negative(){
-    monitor.value += "-"
+// Tính bình phương
+function binhPhuong(){
+    monitor.value = Math.pow(monitor.value, 2)
 }
 
 // Xóa 1 số cuối
@@ -40,3 +57,4 @@ function _del(){
 function equal(){
     monitor.value = eval(monitor.value)
 }
+
