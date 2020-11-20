@@ -16,6 +16,13 @@
     width: 90px;
     height: 30px;
     background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .box::before{
+    content: "90 x 30";
 }
 
 .top .box:nth-child(2){
@@ -45,6 +52,10 @@
 
     .top .box{
         width: 60px;
+    }
+
+    .top .box::before{
+        content: "60 x 30";
     }
 
     .top .box:nth-child(2){

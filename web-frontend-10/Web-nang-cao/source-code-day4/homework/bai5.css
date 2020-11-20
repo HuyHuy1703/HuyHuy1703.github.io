@@ -18,6 +18,13 @@
     width: 90px;
     height: 30px;
     background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .box::before{
+    content: "90 x 30";
 }
 
 .bottom {
@@ -35,7 +42,16 @@
     margin-right: 15px;
 }
 
+
 @media (max-width: 576px) {
+    .top .box {
+        width: 60px;
+    }
+
+    .top .box::before{
+        content: "60 x 30";
+    }
+
     .bottom {
         display: flex;
         flex-wrap: wrap;
@@ -47,7 +63,5 @@
         margin-right: 0px;
     }
 
-    .top .box {
-        width: 60px;
-    }
+    
 }
