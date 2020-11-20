@@ -14,22 +14,7 @@ h1 {
 .box {
     width: 100%;
     height: 200px;
-    border: 1px solid #00aaff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-img{
-    width: 100%;
-    object-fit: contain;
-}
-
-p{
-    padding: 0px 10px;
-    display: none;
-    text-align: justify;
+    background-color: dodgerblue;
 }
 
 /* Bài 1 */
@@ -40,6 +25,7 @@ p{
 }
 
 .grid_container_1 {
+    width: 100%;
     display: grid;
     /* Dàn hàng thành 3 cột */
     grid-template-columns: auto auto auto;
@@ -51,7 +37,6 @@ p{
 
 /* Bài 2 */
 .container_2 {
-    width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -60,6 +45,7 @@ p{
 }
 
 .grid_container_2 {
+    width: 100%;
     display: grid;
     /* Dàn hàng thành 3 cột */
     grid-template-columns: auto auto auto;
@@ -86,13 +72,5 @@ p{
 
     .grid_container_2 {
         grid-template-columns: auto;
-    }
-
-    img{
-        display: none;
-    }
-
-    p{
-        display: block;
     }
 }
