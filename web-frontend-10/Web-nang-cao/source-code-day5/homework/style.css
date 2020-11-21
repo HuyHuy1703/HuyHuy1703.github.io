@@ -1,0 +1,134 @@
+/* css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid red;
+}
+
+/* Start menu mobile */
+
+.navbar .menu-button {
+    border: 1px solid #000;
+    display: none;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .menu-mobile {
+    flex-direction: column;
+    border: 1px solid #000;
+    margin-top: 15px;
+    display: none;
+}
+
+.navbar .menu-button button {
+    border: 0;
+    background-color: dodgerblue;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navbar .menu-mobile .menu {
+    padding: 10px;
+    background-color: dodgerblue;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .menu-mobile .menu:nth-child(-n + 3){
+    border-bottom: 1px solid #000;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* End menu mobile */
+
+.navbar {
+    padding: 0px 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid dodgerblue;
+}
+
+.content {
+    height: 600px;
+    margin: 15px;
+    background-color: dodgerblue;
+}
+
+.navbar .logo {
+    width: 90px;
+    height: 30px;
+    background-color: #f4cccc;
+}
+
+.navbar .logo .logo-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar .menu-desktop {
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+}
+
+.navbar .menu-desktop .menu {
+    height: 24px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: dodgerblue;
+}
+
+.navbar .menu-desktop .line {
+    border-left: 1px solid #cccccc;
+    height: 12px;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        display: block;
+        height: auto;
+        padding: 15px;
+    }
+
+    .navbar .menu-button,
+    .navbar .menu-mobile {
+        display: flex;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .menu-desktop {
+        display: none;
+    }
+
+    .content{
+        margin: 0px 15px 15px 15px;
+    }
+}
