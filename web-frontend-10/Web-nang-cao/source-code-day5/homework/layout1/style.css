@@ -61,8 +61,8 @@ li:nth-child(1){
 /* Start Menu Button */
 
 .menu-button{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     display: none;
 }
 
@@ -74,7 +74,7 @@ li:nth-child(1){
     background-color: dodgerblue;
     border: 1px solid #000;
     color: #FFF;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* End Menu Button */

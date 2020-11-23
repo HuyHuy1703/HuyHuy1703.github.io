@@ -12,10 +12,10 @@ function _resize() {
 
     if (currentWidth > 576) {
         menu.style.display = "flex"
-    }else if(currentWidth < 576){
-        if(_data == "show"){
+    } else if (currentWidth < 576) {
+        if (_data == "show") {
             menu.style.display = "flex"
-        }else if(_data == "hide"){
+        } else if (_data == "hide") {
             menu.style.display = "none"
         }
     }
