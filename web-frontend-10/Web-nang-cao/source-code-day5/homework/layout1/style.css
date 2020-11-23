@@ -40,6 +40,14 @@ li:nth-child(1){
     display: none;
 }
 
+.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
 /* End General Setting */
 
 .navbar{
