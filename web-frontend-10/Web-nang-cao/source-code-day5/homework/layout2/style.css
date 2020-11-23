@@ -132,6 +132,7 @@ li{
     }
 
     .menu{
+        display: flex;
         margin-top: 15px;
         width: 100%;
         text-align: center;
@@ -179,7 +180,6 @@ li{
 
 @media (max-width: 200px){
     .logo{
-        /* display: none; */
         position: relative;
         left: auto;
     }

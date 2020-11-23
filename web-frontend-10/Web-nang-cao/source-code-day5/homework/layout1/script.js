@@ -2,8 +2,6 @@
 
 let menu = document.getElementsByClassName("menu")[0]
 
-// let ul_list = document.getElementsByTagName("ul")[0]
-
 window.addEventListener("resize", _resize)
 
 function _resize() {
