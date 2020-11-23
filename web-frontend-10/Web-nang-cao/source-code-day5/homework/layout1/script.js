@@ -18,11 +18,11 @@ function _resize() {
 function hamburger() {
 
     let comp = window.getComputedStyle(menu)
-    let val = comp.getPropertyValue("display")
+    let display = comp.getPropertyValue("display")
 
-    if (val === "flex") {
+    if (display === "flex") {
         menu.style.display = "none"
-    } else if (val === "none") {
+    } else if (display === "none") {
         menu.style.display = "flex"
     }
 
