@@ -1,0 +1,18 @@
+
+/* Font inconsolata playfair */
+
+@font-face {
+    font-family: "playfair_displayregular";
+    src: url("playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"),
+        url("playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inconsolataregular";
+    src: url("inconsolata-variablefont_wdthwght-webfont.woff2") format("woff2"),
+        url("inconsolata-variablefont_wdthwght-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
