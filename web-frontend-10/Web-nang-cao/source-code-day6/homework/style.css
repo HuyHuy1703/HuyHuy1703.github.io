@@ -13,6 +13,31 @@ body {
     font-size: 14px;
 }
 
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b4ad9e;
+    margin-top: 30px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #626262;
+}
+
+.paragraph{
+    font-size: 14px;
+    color: #626262;
+}
+
+.leaveCM{
+    font-family: 'Ubuntu', sans-serif;
+    color: #b4ad9e;
+    margin-top: 30px;
+}
+
 /* Start Header */
 .navbar{
     height: 160px;
@@ -38,7 +63,7 @@ body {
 
 .navbar a {
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 10px 0px !important;
     font-weight: 600;
 }
 
@@ -47,40 +72,25 @@ body {
 }
 /* End Header */
 
-/* Start Description */
-.description{
-    padding: 100px 120px;
+.part-1{
+    padding: 50px 120px;
 }
 
-.description h3{
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #b4ad9e;
+.post{
+    margin: 80px 0px;
+    overflow: hidden;
 }
 
-.description h2{
-    font-size: 30px;
-    margin: 20px 0px;
-    color: #626262;
+.post img{
+    width: 100%;
+    object-fit: cover;
 }
 
-.description p:nth-child(3){
-    font-size: 14px;
-    color: #626262;
-    margin-bottom: 30px ;
-}
-
-.description p:last-child{
-    font-family: 'Ubuntu', sans-serif;
-    color: #b4ad9e;
-}
-
-/* End Description */
 
 @media (max-width: 768px){
     .navbar{
         height: auto;
+        padding-top: 5px;
     }
 
     .nav-item{
@@ -88,9 +98,7 @@ body {
         padding-left: 0px;
     }
 
-    .description{
-        padding: 50px 0 0;
+    .part-1{
+        padding: 0px 15px;
     }
-
-
 }
