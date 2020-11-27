@@ -5,7 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.5;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0;
+}
+
+.container{
+    max-width: 1200px;
+    border: 1px solid red;
+    padding: 0;
 }
 
 body {
@@ -18,12 +27,12 @@ h3{
     text-transform: uppercase;
     font-size: 14px;
     color: #b4ad9e;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 h2{
     font-size: 30px;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     color: #626262;
 }
 
@@ -35,13 +44,13 @@ h2{
 .leaveCM{
     font-family: 'Ubuntu', sans-serif;
     color: #b4ad9e;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 /* Start Header */
 .navbar{
     height: 160px;
-    padding: 0;
+    padding: 0px 69px;
     background-color: #FFF!important;
     text-transform: uppercase;
 }
@@ -50,6 +59,8 @@ h2{
     font-size: 30px;
     font-family: "Inconsolata", monospace;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-item{
@@ -61,36 +72,80 @@ h2{
     padding-right: 0;
 }
 
-.navbar a {
+.navbar ul a {
     margin: 0 !important;
-    padding: 10px 0px !important;
+    padding: 15px 0px !important;
     font-weight: 600;
 }
 
+.banner{
+    padding: 0px 69px;
+}
 .banner img{
     width: 100%;
 }
 /* End Header */
 
-.part-1{
-    padding: 50px 120px;
+.content-1{
+    padding: 0px 150px;
 }
 
+/* Start Description */
+.description h3{
+    margin-top: 98px;
+}
+
+.description h2{
+    margin-top: 29px;
+}
+
+.description .paragraph{
+    margin-top: 34px;
+}
+
+.description .leaveCM{
+    margin-top: 50px;
+}
+/* End Description */
+
 .post{
-    margin: 80px 0px;
+    margin-top: 135px;
     overflow: hidden;
 }
+
+.post .row:nth-child(2){
+    margin: 130px 0 0;
+}
+
+.post .box{
+    width: 100%;
+    padding: 0;
+}
+
+.post .box:nth-child(2n+1){
+    padding-right: 30px;
+}
+
+.post .box:nth-child(2n){
+    padding-left: 30px;
+}
+
 
 .post img{
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 
 @media (max-width: 768px){
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .navbar{
         height: auto;
-        padding-top: 5px;
+        padding: 5px 0px;
     }
 
     .nav-item{
