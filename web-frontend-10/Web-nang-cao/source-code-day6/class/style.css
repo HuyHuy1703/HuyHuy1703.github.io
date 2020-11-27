@@ -4,66 +4,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.5;
 }
 
-.container-fluid,
-.container{
+.container-fluid{
     padding: 0;
 }
 
 .navbar{
-    background-color: #34465C !important;
+    background-color: #34465C!important;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
 }
 
-.navbar img{
-    width: 100px;
+.fa-bars{
+    color: #FFF!important;
 }
 
-.nav-item a{
-    color: #FFF !important;
-    text-transform: uppercase;
+.navbar-brand img{
+    width: 120px;
 }
 
-.dropdown-menu{
-    padding: 0;
+.dropdown-menu {
+    max-width: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.dropdown-menu a{
-    color: #000 !important;
-    padding: 10px 15px;
+.dropdown-item > li{
+    list-style: none;
+    align-items: center;
 }
 
-.dropdown-menu a:hover{
-    background-color: #C4C4C4;
-    color: #FFF !important;
-}
-
-.row{
-    margin: 0;
-}
-
-.card{
-    padding: 0;
-    margin: 15px 0px;
-}
-
-.card-body{
-    padding: 0;
-    padding-bottom: 20px;
-}
-
-.card h5{
-    padding-top: 10px;
+.dropdown-item > li > span{
     text-align: center;
+    padding: 7px;
 }
 
-.card p{
-    padding: 0px 15px;
+.dropdown-item:hover{
+    background-color: #c4c4c4;
+    color: #FFF;
 }
 
-.footer{
-    padding: 0px 15px;
-    display: flex;
-    justify-content: space-between;
+.nav-link{
+    text-transform: uppercase;
+    color: #FFF!important;
+}
+
+@media (max-width: 992px){
+    .nav-link{
+        margin: 0 !important;
+    }
 }

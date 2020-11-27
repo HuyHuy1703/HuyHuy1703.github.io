@@ -8,6 +8,7 @@
 
 body{
     background-color: lightpink;
+    font-size: 14px;
 }
 
 .container{
@@ -21,7 +22,7 @@ nav{
 
 nav .navbar-brand{
     text-transform: uppercase;
-    font-family: inconsolataregular;
+    font-family: "inconsolataregular";
     font-size: 30px !important;
     color: #000;
     padding: 0;
@@ -30,10 +31,11 @@ nav .navbar-brand{
 
 nav .nav-item a{
     text-transform: uppercase;
-    font-family: playfair_displayregular;
+    /* font-family: playfair_displayregular; */
+    font-family: 'Playfair Display';
     color: #626262;
     padding: 0;
-    /* font-size: 14px; */
+    font-size: 14px;
     /* line-height: 24px; */
 }
 
