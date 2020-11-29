@@ -261,6 +261,10 @@ h2{
         padding: 0px;
     }
 
+    .paragraph{
+        text-align: justify;
+    }
+
     .post .row .box:nth-child(2n+1){
         padding-right: 0px;
     }

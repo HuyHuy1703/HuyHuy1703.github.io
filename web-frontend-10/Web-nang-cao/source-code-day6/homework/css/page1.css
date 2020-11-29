@@ -78,6 +78,7 @@ h2{
 .banner{
     padding: 0px 69px;
 }
+
 .banner img{
     width: 100%;
 }
@@ -119,16 +120,61 @@ h2{
 }
 
 .image .text{
-    padding: 60px 0px 0px 0px;
+    padding: 60px 15px 0px 15px;
     font-style: italic;
 }
 /* End Image Content */
+
+.share{
+    text-align: right;
+    margin-top: 65px;
+    color: #b4ad9e;
+    font-size: 13px;
+}
+
+.share a{
+    color: #b4ad9e;
+    margin-left: 13px;
+    font-size: 14px;
+}
+
+.row{
+    padding: 0px 15px;
+    overflow: hidden;
+}
+
+.row .box{
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.row .box:nth-child(1){
+    padding-right: 40px;
+}
+
+.row .box:nth-child(2){
+    padding-right: 20px;
+}
+
+.row .box:nth-child(3){
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+/* .row .box img{
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    overflow: hidden;
+} */
 
 /* Start Footer */
 
 .container-fluid{
     padding: 0;
-    height: 287px;
+    height: 435px;
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     background-color: #F0F0F0;
@@ -181,6 +227,10 @@ footer a:hover{
 
     .banner{
         padding: 0px;
+    }
+
+    .paragraph{
+        text-align: justify;
     }
 
     footer{
