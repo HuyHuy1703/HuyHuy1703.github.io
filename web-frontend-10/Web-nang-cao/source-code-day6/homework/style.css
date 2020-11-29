@@ -13,7 +13,7 @@
 
 .container{
     max-width: 1200px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0;
 }
 
@@ -27,12 +27,10 @@ h3{
     text-transform: uppercase;
     font-size: 14px;
     color: #b4ad9e;
-    /* margin-top: 30px; */
 }
 
 h2{
     font-size: 30px;
-    /* margin: 20px 0px; */
     color: #626262;
 }
 
@@ -44,12 +42,11 @@ h2{
 .leaveCM{
     font-family: 'Ubuntu', sans-serif;
     color: #b4ad9e;
-    /* margin-top: 30px; */
 }
 
 /* Start Header */
 .navbar{
-    height: 160px;
+    height: 164px;
     padding: 0px 69px;
     background-color: #FFF!important;
     text-transform: uppercase;
@@ -108,28 +105,24 @@ h2{
 }
 /* End Description */
 
-.post{
-    margin-top: 135px;
-    overflow: hidden;
+
+/* Start Post */
+.post .row{
+    margin: 130px 0px 125px 0px;
 }
 
-.post .row:nth-child(2){
-    margin: 130px 0 0;
-}
-
-.post .box{
+.post .row .box{
     width: 100%;
     padding: 0;
 }
 
-.post .box:nth-child(2n+1){
+.post .row .box:nth-child(2n+1){
     padding-right: 30px;
 }
 
-.post .box:nth-child(2n){
+.post .row .box:nth-child(2n){
     padding-left: 30px;
 }
-
 
 .post img{
     width: 100%;
@@ -137,12 +130,27 @@ h2{
     overflow: hidden;
 }
 
+.post h3{
+    margin-top: 30px;
+}
+
+.post h2{
+    margin-top: 25px;
+}
+
+.post .paragraph{
+    margin-top: 34px;
+}
+/* End Post */
+
 
 @media (max-width: 768px){
+
     .container{
         padding-right: 15px;
         padding-left: 15px;
     }
+    
     .navbar{
         height: auto;
         padding: 5px 0px;
@@ -153,7 +161,16 @@ h2{
         padding-left: 0px;
     }
 
-    .part-1{
-        padding: 0px 15px;
+    .banner{
+        padding: 0px;
+    }
+
+    .post .row .box:nth-child(2n+1){
+        padding-right: 0px;
+    }
+    
+    .post .row .box:nth-child(2n){
+        padding-left: 0px;
+        margin-top: 130px;
     }
 }
