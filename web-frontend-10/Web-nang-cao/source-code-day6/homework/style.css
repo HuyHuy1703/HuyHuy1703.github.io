@@ -83,7 +83,7 @@ h2{
 }
 /* End Header */
 
-.content-1{
+.content{
     padding: 0px 150px;
 }
 
@@ -110,6 +110,12 @@ h2{
 .post .row{
     margin: 130px 0px 125px 0px;
 }
+
+/* Row under email */
+.content:nth-child(4) .post .row{
+    margin: 100px 0px 160px 0px;
+}
+/* */
 
 .post .row .box{
     width: 100%;
@@ -178,7 +184,47 @@ h2{
     border: 0;
     outline: 0;
 }
+
+.loadMore button{
+    padding: 20px 32px;
+    background-color: #FFF;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.loadMore button:hover{
+    background-color: #f3f3f3;
+}
 /*  */
+
+/* Start Footer */
+    footer{
+        margin-top: 100px;
+        height: 100px!important;
+    }
+
+    footer > .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 150px;
+    }
+
+    footer a{
+        margin-left: 15px;
+        color: #000;
+    }
+
+    footer a:nth-child(1){
+        margin-left: 0px;
+    }
+
+    footer a:hover{
+        text-decoration: none;
+    }
+
+/* End Footer */
 
 @media (max-width: 768px){
 
@@ -219,4 +265,36 @@ h2{
         margin-right: 0px;
     }
     
+    footer{
+        height: auto!important;
+    }
+
+    footer > .container{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    footer > .container > .item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    footer > .container > .item:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer > .container > .item:nth-child(2) a{
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+ 
 }
