@@ -1,0 +1,219 @@
+/* css */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Playfair+Display&family=Ubuntu:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0;
+}
+
+.container{
+    max-width: 1200px;
+    border: 1px solid transparent;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+}
+
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b4ad9e;
+}
+
+h2{
+    font-size: 30px;
+    color: #626262;
+}
+
+.paragraph{
+    font-size: 14px;
+    color: #626262;
+}
+
+.leaveCM{
+    font-family: 'Ubuntu', sans-serif;
+    color: #b4ad9e;
+}
+
+/* Start Header */
+.navbar{
+    height: 164px;
+    padding: 0px 69px;
+    background-color: #FFF!important;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: "Inconsolata", monospace;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.nav-item:last-child{
+    padding-right: 0;
+}
+
+.navbar ul a {
+    margin: 0 !important;
+    padding: 15px 0px !important;
+    font-weight: 600;
+}
+
+.banner{
+    padding: 0px 69px;
+}
+.banner img{
+    width: 100%;
+}
+/* End Header */
+
+.content{
+    padding: 0px 150px;
+    /* border: 1px solid red; */
+}
+
+/* Start Description */
+.description h3{
+    margin-top: 98px;
+}
+
+.description h2{
+    margin-top: 29px;
+}
+
+.description .paragraph{
+    margin-top: 34px;
+}
+
+.description .paragraph span{
+    font-weight: bold;
+}
+/* End Description */
+
+/* Start Image Content */
+
+.image{
+    padding: 60px 150px 0px 150px;
+}
+
+.image .item img{
+    padding-top: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image .text{
+    padding: 60px 0px 0px 0px;
+    font-style: italic;
+}
+/* End Image Content */
+
+/* Start Footer */
+
+.container-fluid{
+    padding: 0;
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+}
+
+footer{
+    margin-top: 100px;
+    height: 100px!important;
+}
+
+footer > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 69px;
+}
+
+footer a{
+    margin-left: 15px;
+    color: #000;
+}
+
+footer a:nth-child(1){
+    margin-left: 0px;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+/* End Footer */
+
+@media (max-width: 768px){
+
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .navbar{
+        height: auto;
+        padding: 5px 0px;
+    }
+
+    .nav-item{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .banner{
+        padding: 0px;
+    }
+
+    footer{
+        height: auto!important;
+    }
+
+    footer > .container{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    footer > .container > .item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    footer > .container > .item:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer > .container > .item:nth-child(2) a{
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+ 
+}
