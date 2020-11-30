@@ -86,7 +86,6 @@ h2{
 
 .content{
     padding: 0px 150px;
-    /* border: 1px solid red; */
 }
 
 /* Start Description */
@@ -138,36 +137,167 @@ h2{
     font-size: 14px;
 }
 
-.row{
-    padding: 0px 15px;
-    overflow: hidden;
+/* Start Relation */
+.relation{
+    display: flex;
+    flex-direction: column;
+}
+
+.relation h3{
+    margin-top: 68px;
+}
+
+.relation h2{
+    margin: 24px 0px;
+    font-size: 20px;
+}
+
+.relation .row{
+    margin-top: 40px;
 }
 
 .row .box{
     width: 100%;
-    padding: 0;
+    padding: 0px 20px;
     overflow: hidden;
 }
 
 .row .box:nth-child(1){
-    padding-right: 40px;
+    padding-left: 15px;
 }
 
-.row .box:nth-child(2){
-    padding-right: 20px;
+.row .box:last-child{
+    padding-right: 15px;
 }
 
-.row .box:nth-child(3){
-    padding-left: 20px;
-    padding-right: 0px;
-}
-
-/* .row .box img{
+.row img{
     width: 100%;
-    padding: 0;
     object-fit: cover;
+}
+/* End Relation */
+
+
+/* Start Social */
+
+.social{
+    margin-top: 60px;
+    margin-bottom: 95px;
+}
+
+.social .user{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social .user .user-image{
+    width: 119px;
+    height: 70px;
+    margin-right: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-} */
+    color: #FFF;
+    font-size: 34px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.social .user .user-image{
+    background-color: #cae5e0;
+}
+
+.social .user .user-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.social button{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*  */
+
+.social .self{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.social .self .user-image{
+    width: 80px;
+    height: 70px;
+    margin-right: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #FFF;
+    font-size: 34px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.social .self .user-image{
+    background-color: #ededea;
+}
+
+.social .self .user-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.self input{
+    width: 100%;
+    height: 70px;
+    padding-left: 35px;
+    border-radius: 5px;
+    border: 1px solid #C8C8C8;
+    outline: 0;
+}
+
+.self input::placeholder{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #c8c8c8;
+}
+
+.self .user-info{
+    width: 100%;
+}
+
+.connect{
+    margin-top: 35px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.connect p{
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.connect a{
+    color: #626262;
+    margin-left: 15px;
+}
+
+.connect a:nth-child(2){
+    color: #C8C8C8;
+}
+
+/* End Social */
 
 /* Start Footer */
 
@@ -232,6 +362,38 @@ footer a:hover{
     .paragraph{
         text-align: justify;
     }
+
+    .container-fluid{
+        height: auto;
+    }
+
+    .social .user{
+        display: block;
+    }
+
+    .social .user .user-image{
+        width: 70px;
+        height: 70px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .social .user .user-content{
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    .social .self{
+        display: block;
+    }
+
+    .social .self .user-image{
+        width: 70px;
+        height: 70px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
 
     footer{
         height: auto!important;
