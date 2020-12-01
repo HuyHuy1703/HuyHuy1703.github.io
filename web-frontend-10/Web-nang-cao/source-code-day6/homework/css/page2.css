@@ -467,6 +467,11 @@ footer a:hover{
         padding-top: 100px;
     }
 
+    .main-content .container{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
     .container-fluid{
         height: auto;
     }
