@@ -208,7 +208,7 @@ html {
     }
 
     .bg-content .title{
-        padding-top: 100px;
+        padding-top: 10px;
     }
     
     .bg-content .search{
@@ -221,6 +221,6 @@ html {
     }
 
     .bg-content .social{
-        margin-top: 200px;
+        margin-top: 150px;
     }
 }
