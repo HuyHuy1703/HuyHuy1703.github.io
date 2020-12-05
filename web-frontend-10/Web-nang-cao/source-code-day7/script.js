@@ -1,15 +1,30 @@
 // js
 
-// Get height screen
+// Thay đổi chiều cao hình nền 
+// để kín màn hình khi truy cập
 
+// Lấy phần tử cần thay đổi
 let bg = document.getElementsByClassName("banner-background")[0]
 
+// lấy chiều cao và chiều rộng màn hình hiện tại
 let curent_width = window.innerWidth
 let curent_height = window.innerHeight
 
-if (curent_width > 992 && curent_width <= 1024) {
-    bg.style.height = (curent_height - 100) + "px"
+// lấy chiều cao navbar
+let nav = document.getElementsByTagName("nav")[0]
+let data = window.getComputedStyle(nav)
+let res_nav = data.getPropertyValue("height")
+
+// cắt chuỗi lấy ra số
+
+let height_nav = res_nav.slice(0, -2)
+
+// Thay đổi chiều cao hình nền kín với màn hình
+if (curent_width > 992) {
+    bg.style.height = (curent_height - height_nav) + "px"
 } else if (curent_width <= 992) {
-    bg.style.height = (curent_height - 63) + "px"
+    bg.style.height = (curent_height - height_nav) + "px"
 }
 
+console.log(height_nav)
+// End
