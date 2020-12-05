@@ -201,5 +201,9 @@ html {
         line-height: 50px;
     }
     
-
+    .banner-background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

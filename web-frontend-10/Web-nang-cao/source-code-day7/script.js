@@ -8,7 +8,7 @@ let curent_width = window.innerWidth
 
 let curent_height = window.innerHeight
 
-if (curent_width > 992) {
+if (curent_width > 992 && curent_width <= 1024) {
     bg.style.height = (curent_height - 100) + "px"
     console.log(curent_height)
 }else if(curent_width <= 992){
