@@ -303,6 +303,94 @@ p {
 }
 /* End other hand */
 
+/* Start clients */
+.clients{
+    background-color: #F8F8F8;
+    margin-top: 140px;
+}
+
+.clients h2{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 48px;
+    color: #797979;
+    font-weight: bold;
+}
+
+.clients .row{
+    margin-top: 95px;
+}
+
+.clients .card{
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 120px;
+}
+
+.clients .card .card-body{
+    background-image: url("img/Path2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 214px;
+    position: relative;
+}
+
+.clients .card .avatar{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clients .card-body p{
+    width: 90%;
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.clients .text{
+    text-align: center;
+}
+
+.clients .text h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #797979;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.clients .text p{
+    font-weight: 300;
+    color: #797979;
+}
+/* End clients */
+
+
+/* Start Team */
+.team{
+    height: 1000px;
+    background-color: #FF65C2;
+    background-image: url("img/team_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+/* End Team */
+
+ /*************************/
+ /*                       */
+ /*                       */
+ /*                       */
+ /*       Responsive      */
+ /*                       */
+ /*                       */
+ /*                       */
+ /*************************/
+
+
 @media (max-width: 992px) {
     .container {
         padding: 0px 15px;
@@ -378,6 +466,7 @@ p {
 
     /* Start Out Benefit */
     .our_benefit {
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
@@ -388,6 +477,7 @@ p {
 
     /* Start Policy */
     .policy {
+        margin-top: 0px;
         height: auto;
         display: block;
         padding: 10px 0px;
@@ -400,6 +490,9 @@ p {
 
     /* Start other hand */
 
+    .other_hand {
+        margin-top: 70px;
+    }
     .other_hand h2 {
         font-size: 2.5rem;
     }
