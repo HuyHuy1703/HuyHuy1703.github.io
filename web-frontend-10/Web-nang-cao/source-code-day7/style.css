@@ -6,7 +6,20 @@ html {
     font-size: 14px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p{
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-bottom: 0;
 }
 
@@ -20,7 +33,7 @@ html {
     padding: 0;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0;
 }
 
@@ -64,24 +77,24 @@ html {
 .navbar ul button {
     padding: 17px 24px;
     background: #ff65c2;
-    color: #FFF;
+    color: #fff;
     font-weight: 600;
     border-radius: 26px;
     border: none;
     outline: 0;
 }
 
-.navbar ul button:hover{
+.navbar ul button:hover {
     background-color: #ff43b5;
 }
 
-.navbar ul button:active{
+.navbar ul button:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* End Navbar */
 
 /* Start Banner */
-.banner-background{
+.banner-background {
     height: 816px;
     background-image: url("img/bg.png");
     background-repeat: no-repeat;
@@ -91,28 +104,28 @@ html {
     align-items: center;
 }
 
-.bg-content .title{
+.bg-content .title {
     font-size: 3.4rem;
-    color: #FFF;
+    color: #fff;
     text-align: center;
     line-height: 75px;
     font-weight: 600;
     padding-top: 170px;
 }
 
-.bg-content .search{
+.bg-content .search {
     margin: 0 auto;
     height: 70px;
     max-width: 736px;
     margin-top: 56px;
 }
 
-.search form{
+.search form {
     height: 100%;
     display: flex;
 }
 
-.search form input{
+.search form input {
     width: 100%;
     border-radius: 41.5px 0px 0px 41.5px;
     padding: 24px 15px 27px 47px;
@@ -120,101 +133,105 @@ html {
     border: 0;
 }
 
-.search form input::placeholder{
-    color: #B5B5B5;
+.search form input::placeholder {
+    color: #b5b5b5;
 }
 
-.search form input:focus{
-    box-shadow: 0 0 7px 1px #ff65c2
+.search form input:focus {
+    box-shadow: 0 0 7px 1px #ff65c2;
 }
 
-.search form button{
+.search form button {
     display: flex;
     align-items: center;
     background-color: #ff65c2;
-    color: #FFF;
+    color: #fff;
     padding-right: 30px;
     border-radius: 0px 41.5px 41.5px 0px;
     outline: 0;
     border: 0;
 }
 
-.search form button::after{
+.search form button::after {
     content: "Search";
 }
 
-.search form button:hover{
+.search form button:hover {
     background-color: #ff43b5;
 }
 
-.search form button:active{
+.search form button:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.search form button img{
+.search form button img {
     margin: 0px 11px;
 }
 
-.bg-content .social{
+.bg-content .social {
     display: flex;
     justify-content: center;
     margin-top: 220px;
 }
 
-.bg-content .social a:nth-child(2){
+.bg-content .social a:nth-child(2) {
     margin: 0px 20px;
 }
 /* End Banner */
 
 /* Start Our Benefit */
-.our_benefit{
+.our_benefit {
     padding-top: 129px;
-    padding-bottom: 137px;
     text-align: center;
 }
 
-.our_benefit .title{
+.our_benefit .title {
     max-width: 730px;
     margin: 0 auto;
 }
 
-.our_benefit .title h2{
+.our_benefit .title h2 {
     font-size: 48px;
     font-weight: bold;
     color: #797979;
 }
 
-.our_benefit .title p{
+.our_benefit .title p {
     color: #797979;
     line-height: 30px;
     padding-top: 30px;
 }
 
-.our_benefit .service{
+.our_benefit .service {
     margin-top: 160px;
 }
 
-.our_benefit .service .card{
+.our_benefit .service .card {
     border: 0;
 }
 
-.our_benefit .service h5{
-    color: #FF65C2;
+.our_benefit .service h5 {
+    color: #ff65c2;
     font-weight: bold;
 }
 
-.our_benefit .service p{
+.our_benefit .service p {
     color: #797979;
     line-height: 30px;
 }
 /* End Our Benefit */
 
 /* Start Policy */
-.policy{
+.policy {
+    margin-top: 137px;
     height: 522px;
-    background-color: #FF65C2;
+    background-color: #ff65c2;
     display: flex;
     align-items: center;
+}
+
+.policy .card {
+    border-radius: 0;
 }
 
 .policy .card-body {
@@ -222,25 +239,71 @@ html {
     padding: 30px 36px;
 }
 
-.policy .card-body .image{
+.policy .card-body .image {
     margin-right: 30px;
 }
 
-.policy .card-body .text h4{
+.policy .card-body .text h4 {
     font-size: 24px;
     color: #797979;
     font-weight: bold;
 }
 
-.policy .card-body .text p{
+.policy .card-body .text p {
     color: #797979;
     line-height: 30px;
     margin-top: 23px;
 }
 /* End Policy */
 
-@media (max-width: 992px) {
+/* Start other hand */
+.other_hand {
+    margin-top: 130px;
+    overflow: hidden;
+}
 
+.other_hand .text{
+    position: relative;
+    z-index: 99;
+}
+
+.other_hand h2 {
+    margin-top: 100px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #797979;
+}
+
+.other_hand p {
+    margin-top: 10px;
+    max-width: 400px;
+    font-weight: 300;
+    color: #797979;
+    line-height: 30px;
+}
+
+.other_hand ul {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.other_hand ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.other_hand ul li img {
+    margin-right: 10px;
+}
+
+.other_hand .thumb img {
+    margin-left: -70px;
+}
+/* End other hand */
+
+@media (max-width: 992px) {
     .container {
         padding: 0px 15px;
     }
@@ -260,95 +323,129 @@ html {
         margin-left: 0px;
         padding: 15px 0px;
     }
-    
+
     .navbar ul .nav-link:last-child {
         margin-left: 0px;
         width: 100%;
     }
-        /* button full width */
+    /* button full width */
     .navbar ul button {
         width: 100%;
     }
     /* End Navbar */
 
     /* Start Banner */
-    .banner-background{
+    .banner-background {
         background-position: left;
     }
 
-    .bg-content{
+    .bg-content {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    .bg-content .title{
+    .bg-content .title {
         font-size: 2rem;
         line-height: 50px;
     }
-    
+
     /* .banner-background{
         display: flex;
         justify-content: center;
         align-items: center;
     } */
 
-    .bg-content .title{
+    .bg-content .title {
         padding-top: 0px;
     }
-    
-    .bg-content .search{
+
+    .bg-content .search {
         margin: 0px;
-        height: 50px;  
+        height: 50px;
     }
 
-    .search form input{
+    .search form input {
         padding: 15px;
         padding-left: 20px;
     }
 
-    .bg-content .social{
+    .bg-content .social {
         margin-top: 0px;
     }
     /* End Banner */
 
     /* Start Out Benefit */
-    .our_benefit{
+    .our_benefit {
         padding-bottom: 100px;
     }
 
-    .our_benefit .service{
+    .our_benefit .service {
         margin-top: 100px;
     }
     /* End Out Benefit */
 
     /* Start Policy */
-    .policy{
+    .policy {
         height: auto;
         display: block;
+        padding: 10px 0px;
     }
 
-    .policy .card{
-        margin: 15px 0px;
+    .policy .card {
+        margin: 10px 0px;
     }
     /* End Policy */
 
+    /* Start other hand */
+
+    .other_hand h2 {
+        font-size: 2.5rem;
+    }
+
+    .other_hand .thumb img {
+        margin-left: -150px;
+    }
+
+    /* End other hand */
 }
 
-@media (max-width: 576px){
-    
-    .search form button{
+@media (max-width: 576px) {
+    .search form button {
         padding-top: 5px;
         padding-right: 5px;
         padding-bottom: 5px;
     }
 
-    .search form button::after{
+    .search form button::after {
         content: "";
     }
 
-    .bg-content .social img{
+    .bg-content .social img {
         width: 50px;
+    }
+
+    /* Start other hand */
+
+    .other_hand h2 {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    /* End other hand */
+}
+
+@media (min-width: 992px) and ( max-width: 1200px){
+    .other_hand .thumb img {
+        margin-left: -160px;
+    }
+
+}
+
+@media (max-width: 766px){
+    .other_hand .thumb img {
+        width: 100%;
+        margin-left: 0px;
     }
 }
