@@ -139,6 +139,10 @@ html {
     border: 0;
 }
 
+.search form button::after{
+    content: "Search";
+}
+
 .search form button:hover{
     background-color: #ff43b5;
 }
@@ -157,10 +161,83 @@ html {
     margin-top: 220px;
 }
 
-.bg-content .social img:nth-child(2){
+.bg-content .social a:nth-child(2){
     margin: 0px 20px;
 }
 /* End Banner */
+
+/* Start Our Benefit */
+.our_benefit{
+    padding-top: 129px;
+    padding-bottom: 137px;
+    text-align: center;
+}
+
+.our_benefit .title{
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.our_benefit .title h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #797979;
+}
+
+.our_benefit .title p{
+    color: #797979;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.our_benefit .service{
+    margin-top: 160px;
+}
+
+.our_benefit .service .card{
+    border: 0;
+}
+
+.our_benefit .service h5{
+    color: #FF65C2;
+    font-weight: bold;
+}
+
+.our_benefit .service p{
+    color: #797979;
+    line-height: 30px;
+}
+/* End Our Benefit */
+
+/* Start Policy */
+.policy{
+    height: 522px;
+    background-color: #FF65C2;
+    display: flex;
+    align-items: center;
+}
+
+.policy .card-body {
+    display: flex;
+    padding: 30px 36px;
+}
+
+.policy .card-body .image{
+    margin-right: 30px;
+}
+
+.policy .card-body .text h4{
+    font-size: 24px;
+    color: #797979;
+    font-weight: bold;
+}
+
+.policy .card-body .text p{
+    color: #797979;
+    line-height: 30px;
+    margin-top: 23px;
+}
+/* End Policy */
 
 @media (max-width: 992px) {
 
@@ -194,6 +271,7 @@ html {
     }
     /* End Navbar */
 
+    /* Start Banner */
     .banner-background{
         background-position: left;
     }
@@ -221,15 +299,56 @@ html {
     }
     
     .bg-content .search{
-        margin-top: 0px;
+        margin: 0px;
         height: 50px;  
     }
 
     .search form input{
         padding: 15px;
+        padding-left: 20px;
     }
 
     .bg-content .social{
         margin-top: 0px;
+    }
+    /* End Banner */
+
+    /* Start Out Benefit */
+    .our_benefit{
+        padding-bottom: 100px;
+    }
+
+    .our_benefit .service{
+        margin-top: 100px;
+    }
+    /* End Out Benefit */
+
+    /* Start Policy */
+    .policy{
+        height: auto;
+        display: block;
+    }
+
+    .policy .card{
+        margin: 15px 0px;
+    }
+    /* End Policy */
+
+}
+
+@media (max-width: 576px){
+    
+    .search form button{
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    .search form button::after{
+        content: "";
+    }
+
+    .bg-content .social img{
+        width: 50px;
     }
 }
