@@ -29,6 +29,11 @@ p {
     box-sizing: border-box;
 }
 
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .container {
     padding: 0;
 }
@@ -376,6 +381,7 @@ p {
     background-position: bottom;
     background-size: contain;
     padding-bottom: 190px;
+
 }
 
 .team h2{
@@ -408,10 +414,125 @@ p {
     margin-bottom: 10px;
 }
 
+.responsive{
+    width: 100%;
+}
+
 .responsive .card{
     margin: 0px 20px;
 }
+
+/* Arrow */
+.slick-prev{
+    transform: translate(-50px, -50%);
+}
+
+.slick-prev:before{
+    font-size: 60px;
+}
+
+.slick-next{
+    transform: translate(50%, -50%);
+}
+
+.slick-next:before{
+    font-size: 60px;
+}
+/* Arrow */
 /* End Team */
+
+/* Start Blog */
+.blog h2{
+    text-align: center;
+    font-size: 48px;
+    color: #797979;
+    font-weight: bold;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.blog .card{
+    border: 0;
+}
+
+.blog .card h5{
+    font-size: 20px;
+    line-height: 31px;
+    color: #797979;
+    padding-bottom: 44px;
+}
+
+.blog .card p{
+    font-weight: 300;
+    line-height: 31px;
+    padding-bottom: 11px;
+}
+
+.blog .card a{
+    color: #797979;
+}
+
+.blog .card a:hover{
+    color: #ff65c2;
+    text-decoration: none;
+}
+/* End Blog */
+
+/* Start Subcribe */
+.subcribe{
+    background-color: #FF65C2;
+    margin-top: 110px;
+    height: 206px;
+}
+
+.subcribe .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subcribe .container .row{
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.subcribe .container .row h2{
+    color: #FFF;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.subcribe .container form input{
+    width: 100%;
+    height: 70px;
+    border-radius: 35px 0px 0px 35px;
+    outline: 0;
+    border: 0;
+    padding-left: 50px;
+    margin-left: -70px;
+}
+
+.subcribe .container form input::placeholder{
+    font-weight: 300;
+    color: #8E8E8E;
+}
+
+.subcribe .container form button{
+    height: 70px;
+    border-radius: 0px 35px 35px 0px;
+    background-color: #565252;
+    color: #FFF;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    outline: 0;
+    border: 0;
+}
+/* End Subcribe */
 
 /*************************/
 /*                       */
@@ -548,6 +669,39 @@ p {
         padding-bottom: 50px;
     }
     /* End Team */
+
+    /* Start Blog */
+    .blog .card{
+        margin-bottom: 40px;
+    }
+
+    .blog .card h5{
+        padding-bottom: 20px;
+    }
+    /* End Blog */
+
+    /* Start Subcribe */
+    .subcribe .container .row{
+        padding: 0px;
+    }
+
+    .subcribe .container .row h2{
+        margin-left: 10px;
+        padding: 20px 0px;
+    }
+
+    .subcribe .container form input{
+        height: 50px;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+
+    .subcribe .container form button{
+        height: 50px;
+        padding: 0px 20px 0px 15px;
+    }
+    /* End Subcribe */
+
 }
 
 @media (max-width: 576px) {
