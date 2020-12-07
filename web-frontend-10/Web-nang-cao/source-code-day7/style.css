@@ -352,7 +352,7 @@ p {
     position: absolute;
     bottom: 35px;
     text-align: center;
-    height: 100px;
+    height: 90px;
     line-height: 30px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -715,6 +715,12 @@ p {
         margin-left: -150px;
     }
     /* End other hand */
+
+    /* Start Clients */
+    .clients .card-body p {
+        left: 20px;
+    }
+    /* End Clients */
 
     /* Start Team */
     .team {
