@@ -262,7 +262,7 @@ p {
     overflow: hidden;
 }
 
-.other_hand .text{
+.other_hand .text {
     position: relative;
     z-index: 99;
 }
@@ -304,12 +304,12 @@ p {
 /* End other hand */
 
 /* Start clients */
-.clients{
-    background-color: #F8F8F8;
+.clients {
+    background-color: #f8f8f8;
     margin-top: 140px;
 }
 
-.clients h2{
+.clients h2 {
     padding-top: 100px;
     text-align: center;
     font-size: 48px;
@@ -317,17 +317,17 @@ p {
     font-weight: bold;
 }
 
-.clients .row{
+.clients .row {
     margin-top: 95px;
 }
 
-.clients .card{
+.clients .card {
     border: 0;
     background-color: transparent;
     margin-bottom: 120px;
 }
 
-.clients .card .card-body{
+.clients .card .card-body {
     background-image: url("img/Path2.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -336,13 +336,13 @@ p {
     position: relative;
 }
 
-.clients .card .avatar{
+.clients .card .avatar {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.clients .card-body p{
+.clients .card-body p {
     width: 90%;
     position: absolute;
     bottom: 35px;
@@ -350,11 +350,11 @@ p {
     line-height: 30px;
 }
 
-.clients .text{
+.clients .text {
     text-align: center;
 }
 
-.clients .text h3{
+.clients .text h3 {
     font-size: 18px;
     font-weight: bold;
     color: #797979;
@@ -362,34 +362,66 @@ p {
     margin-bottom: 5px;
 }
 
-.clients .text p{
+.clients .text p {
     font-weight: 300;
     color: #797979;
 }
 /* End clients */
 
-
 /* Start Team */
-.team{
-    height: 1000px;
-    background-color: #FF65C2;
+.team {
+    background-color: #ff65c2;
     background-image: url("img/team_bg.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    padding-bottom: 190px;
+}
+
+.team h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFF;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.team .card {
+    border: 0;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.team .card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.team .card-body {
+    text-align: center;
+    color: #959595;
+}
+
+.team .card-body h5{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.responsive .card{
+    margin: 0px 20px;
 }
 /* End Team */
 
- /*************************/
- /*                       */
- /*                       */
- /*                       */
- /*       Responsive      */
- /*                       */
- /*                       */
- /*                       */
- /*************************/
-
+/*************************/
+/*                       */
+/*                       */
+/*                       */
+/*       Responsive      */
+/*                       */
+/*                       */
+/*                       */
+/*************************/
 
 @media (max-width: 992px) {
     .container {
@@ -489,7 +521,6 @@ p {
     /* End Policy */
 
     /* Start other hand */
-
     .other_hand {
         margin-top: 70px;
     }
@@ -500,8 +531,23 @@ p {
     .other_hand .thumb img {
         margin-left: -150px;
     }
-
     /* End other hand */
+
+    /* Start Team */
+    .team {
+        padding-bottom: 50px;
+        background-size: 1000px;
+    }
+
+    .team h2{
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        color: #FFF;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    /* End Team */
 }
 
 @media (max-width: 576px) {
@@ -529,14 +575,13 @@ p {
     /* End other hand */
 }
 
-@media (min-width: 992px) and ( max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1200px) {
     .other_hand .thumb img {
         margin-left: -160px;
     }
-
 }
 
-@media (max-width: 766px){
+@media (max-width: 766px) {
     .other_hand .thumb img {
         width: 100%;
         margin-left: 0px;
