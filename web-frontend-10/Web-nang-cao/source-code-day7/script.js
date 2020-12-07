@@ -64,7 +64,7 @@ if (curent_width >= 768 && curent_width < 1200) {
     }
 }
 
-if (curent_width <= 401) {
+if (curent_width < 414) {
     for (let i = 0; i < feedback.length; i++) {
         feedback[i].innerText = `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ...`
     }
