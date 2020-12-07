@@ -28,7 +28,9 @@ let height_nav = res_nav.slice(0, -2)
 // Thay đổi chiều cao hình nền kín với màn hình (bao gồm navbar)
 if (curent_width > 992) {
     bg.style.height = (curent_height - height_nav) + "px"
-} else if (curent_width <= 992) {
+}
+
+if (curent_width <= 992) {
     bg.style.height = (curent_height - height_nav) + "px"
 }
 
